@@ -1,0 +1,32 @@
+[0.900s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build
+[1.089s] running develop
+[1.256s] Removing /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my-sphere-pkg.egg-link (link to .)
+[1.280s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build
+[1.282s] Invoking command in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_sphere_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_sphere_pkg build --build-base /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build install --record /home/dndqodqks/ros2_ws/build/my_sphere_pkg/install.log --install-scripts $base/lib/my_sphere_pkg --single-version-externally-managed
+[1.464s] running egg_info
+[1.465s] writing ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/PKG-INFO
+[1.465s] writing dependency_links to ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/dependency_links.txt
+[1.465s] writing entry points to ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/entry_points.txt
+[1.466s] writing requirements to ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/requires.txt
+[1.466s] writing top-level names to ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/top_level.txt
+[1.509s] reading manifest file '../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/SOURCES.txt'
+[1.511s] writing manifest file '../../../build/my_sphere_pkg/my_sphere_pkg.egg-info/SOURCES.txt'
+[1.511s] running build
+[1.511s] running build_py
+[1.511s] running install
+[1.512s] running install_lib
+[1.513s] creating /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg
+[1.513s] copying /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build/lib/my_sphere_pkg/coordinate_node.py -> /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg
+[1.513s] copying /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build/lib/my_sphere_pkg/client_node.py -> /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg
+[1.513s] copying /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build/lib/my_sphere_pkg/__init__.py -> /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg
+[1.514s] byte-compiling /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg/coordinate_node.py to coordinate_node.cpython-38.pyc
+[1.515s] byte-compiling /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg/client_node.py to client_node.cpython-38.pyc
+[1.516s] byte-compiling /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg/__init__.py to __init__.cpython-38.pyc
+[1.516s] running install_data
+[1.517s] running install_egg_info
+[1.518s] Copying ../../../build/my_sphere_pkg/my_sphere_pkg.egg-info to /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my_sphere_pkg-0.0.0-py3.8.egg-info
+[1.519s] running install_scripts
+[1.537s] Installing my_client_node script to /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/my_sphere_pkg
+[1.537s] Installing reader_mark_node script to /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/my_sphere_pkg
+[1.537s] writing list of installed files to '/home/dndqodqks/ros2_ws/build/my_sphere_pkg/install.log'
+[1.557s] Invoked command in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_sphere_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_sphere_pkg build --build-base /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build install --record /home/dndqodqks/ros2_ws/build/my_sphere_pkg/install.log --install-scripts $base/lib/my_sphere_pkg --single-version-externally-managed

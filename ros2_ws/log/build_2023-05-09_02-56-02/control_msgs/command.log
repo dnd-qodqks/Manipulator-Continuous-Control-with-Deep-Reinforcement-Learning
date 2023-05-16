@@ -1,0 +1,2 @@
+Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs
+Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '1': /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs

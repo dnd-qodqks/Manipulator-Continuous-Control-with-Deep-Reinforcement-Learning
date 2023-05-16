@@ -1,0 +1,35 @@
+[0.016s] Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs
+[0.110s] -- The C compiler identification is GNU 9.4.0
+[0.149s] -- The CXX compiler identification is GNU 9.4.0
+[0.152s] -- Check for working C compiler: /usr/bin/cc
+[0.198s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.198s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.260s] -- Detecting C compile features
+[0.261s] -- Detecting C compile features - done
+[0.263s] -- Check for working CXX compiler: /usr/bin/c++
+[0.319s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.320s] -- Detecting CXX compiler ABI info
+[0.376s] -- Detecting CXX compiler ABI info - done
+[0.385s] -- Detecting CXX compile features
+[0.385s] -- Detecting CXX compile features - done
+[0.392s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.392s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.392s]   has asked CMake to find a package configuration file provided by
+[0.392s]   "ament_cmake", but CMake did not find one.
+[0.393s] 
+[0.393s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.393s]   any of the following names:
+[0.393s] 
+[0.393s]     ament_cmakeConfig.cmake
+[0.393s]     ament_cmake-config.cmake
+[0.393s] 
+[0.393s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.393s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.393s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.393s]   has been installed.
+[0.393s] 
+[0.393s] 
+[0.394s] -- Configuring incomplete, errors occurred!
+[0.394s] See also "/home/dndqodqks/ros2_ws/build/control_msgs/CMakeFiles/CMakeOutput.log".
+[0.395s] Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '1': /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs

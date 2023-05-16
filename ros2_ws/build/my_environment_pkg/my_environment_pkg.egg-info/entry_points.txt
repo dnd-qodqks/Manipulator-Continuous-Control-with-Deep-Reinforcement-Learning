@@ -1,0 +1,5 @@
+[console_scripts]
+data_collection = my_environment_pkg.collection_data:main
+run_environment = my_environment_pkg.run_environment:main
+test_node = my_environment_pkg.test_node:main
+

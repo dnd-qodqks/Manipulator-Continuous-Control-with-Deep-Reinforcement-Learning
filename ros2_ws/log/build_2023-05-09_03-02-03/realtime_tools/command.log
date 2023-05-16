@@ -1,0 +1,6 @@
+Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/realtime_tools
+Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/realtime_tools
+Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools
+Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools
