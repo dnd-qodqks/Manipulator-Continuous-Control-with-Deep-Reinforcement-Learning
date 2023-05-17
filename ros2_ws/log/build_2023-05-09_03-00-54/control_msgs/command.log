@@ -1,6 +1,0 @@
-Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs
-Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs -DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs
-Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
-Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
-Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs
-Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs

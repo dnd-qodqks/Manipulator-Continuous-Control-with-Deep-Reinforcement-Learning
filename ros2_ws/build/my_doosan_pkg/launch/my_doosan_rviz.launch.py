@@ -1,1 +1,0 @@
-/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_doosan_pkg/launch/my_doosan_rviz.launch.py

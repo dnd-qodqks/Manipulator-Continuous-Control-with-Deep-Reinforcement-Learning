@@ -1,2 +1,0 @@
-/usr/bin/ar qc librealtime_tools.a  CMakeFiles/realtime_tools.dir/src/realtime_clock.cpp.o
-/usr/bin/ranlib librealtime_tools.a
