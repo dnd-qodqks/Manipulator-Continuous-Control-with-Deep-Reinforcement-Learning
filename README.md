@@ -1,4 +1,4 @@
 # Trash-Throwing-Simulation-with-Deep-Reinforcement-Learning
 
-# Reference
+## Reference
 - https://github.com/dvalenciar/robotic_arm_environment
