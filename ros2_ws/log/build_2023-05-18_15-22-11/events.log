@@ -1,0 +1,845 @@
+[0.000000] (-) TimerEvent: {}
+[0.000243] (control_msgs) JobQueued: {'identifier': 'control_msgs', 'dependencies': OrderedDict()}
+[0.000598] (realtime_tools) JobQueued: {'identifier': 'realtime_tools', 'dependencies': OrderedDict()}
+[0.000755] (control_msgs) JobStarted: {'identifier': 'control_msgs'}
+[0.013961] (realtime_tools) JobStarted: {'identifier': 'realtime_tools'}
+[0.020233] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'cmake'}
+[0.020797] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/control_msgs'], 'cwd': '/home/dndqodqks/ros2_ws/build/control_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/control_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.030247] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'cmake'}
+[0.030572] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '/home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dndqodqks/ros2_ws/install/realtime_tools'], 'cwd': '/home/dndqodqks/ros2_ws/build/realtime_tools', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/realtime_tools'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099896] (-) TimerEvent: {}
+[0.123672] (realtime_tools) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.123905] (control_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.162065] (control_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.162196] (realtime_tools) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.165431] (realtime_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.165510] (control_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199978] (-) TimerEvent: {}
+[0.212229] (realtime_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.212402] (control_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.213027] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.213103] (control_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.260711] (control_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.260924] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.269440] (control_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.269660] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.269873] (control_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.270080] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.271587] (control_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.271982] (realtime_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300078] (-) TimerEvent: {}
+[0.325326] (control_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.325483] (realtime_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.326156] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.326294] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.381351] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.381482] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.390293] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.390477] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.390782] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.390912] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.392272] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.392359] (control_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.400158] (-) TimerEvent: {}
+[0.409168] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.409297] (realtime_tools) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.409357] (realtime_tools) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.409406] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.500246] (-) TimerEvent: {}
+[0.536384] (control_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.536806] (realtime_tools) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.556655] (control_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.556939] (realtime_tools) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.574874] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.579287] (control_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.587587] (realtime_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.592009] (realtime_tools) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600377] (-) TimerEvent: {}
+[0.629436] (control_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.641541] (realtime_tools) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.649711] (control_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.661597] (realtime_tools) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.700462] (-) TimerEvent: {}
+[0.704854] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.716647] (realtime_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.725839] (control_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.734350] (control_msgs) StdoutLine: {'line': b'-- Found action_msgs: 1.0.0 (/opt/ros/foxy/share/action_msgs/cmake)\n'}
+[0.759447] (realtime_tools) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.760527] (realtime_tools) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.761166] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.766420] (control_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.800549] (-) TimerEvent: {}
+[0.814042] (control_msgs) StdoutLine: {'line': b'-- Found trajectory_msgs: 2.0.5 (/opt/ros/foxy/share/trajectory_msgs/cmake)\n'}
+[0.814889] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.815089] (realtime_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.864492] (realtime_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.864737] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.873375] (control_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.900636] (-) TimerEvent: {}
+[0.905389] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.905626] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.944893] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.955772] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.956615] (realtime_tools) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000709] (-) TimerEvent: {}
+[1.074607] (realtime_tools) StdoutLine: {'line': b'-- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)\n'}
+[1.100777] (-) TimerEvent: {}
+[1.134071] (control_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.135946] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[1.137152] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[1.138228] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake)\n'}
+[1.139268] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.9.8 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)\n'}
+[1.141445] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)\n'}
+[1.142506] (realtime_tools) StdoutLine: {'line': b'-- Found test_msgs: 1.0.0 (/opt/ros/foxy/share/test_msgs/cmake)\n'}
+[1.191523] (realtime_tools) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[1.194090] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[1.194875] (realtime_tools) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.200863] (-) TimerEvent: {}
+[1.247203] (realtime_tools) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.300986] (-) TimerEvent: {}
+[1.326928] (realtime_tools) StdoutLine: {'line': b'-- Generating done\n'}
+[1.328643] (realtime_tools) StdoutLine: {'line': b'-- Build files have been written to: /home/dndqodqks/ros2_ws/build/realtime_tools\n'}
+[1.335273] (realtime_tools) CommandEnded: {'returncode': 0}
+[1.335898] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'build'}
+[1.337632] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dndqodqks/ros2_ws/build/realtime_tools', '--', '-j8', '-l8'], 'cwd': '/home/dndqodqks/ros2_ws/build/realtime_tools', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/realtime_tools'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.348650] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.365905] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_tools\x1b[0m\n'}
+[1.366112] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gmock\x1b[0m\n'}
+[1.366206] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gmock_main\x1b[0m\n'}
+[1.378129] (realtime_tools) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/realtime_tools.dir/src/realtime_clock.cpp.o\x1b[0m\n'}
+[1.378869] (realtime_tools) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[1.381321] (realtime_tools) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[1.382006] (realtime_tools) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/foxy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[1.401091] (-) TimerEvent: {}
+[1.457430] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.479818] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.480808] (control_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.500512] (control_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.500772] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.500869] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.500942] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.501143] (-) TimerEvent: {}
+[1.525136] (control_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.601251] (-) TimerEvent: {}
+[1.673285] (control_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.676119] (control_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.677757] (control_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.688368] (control_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.701359] (-) TimerEvent: {}
+[1.801669] (-) TimerEvent: {}
+[1.837865] (control_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.841782] (control_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/dndqodqks/ros2_ws/build/control_msgs\n'}
+[1.856558] (control_msgs) CommandEnded: {'returncode': 0}
+[1.857386] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'build'}
+[1.857783] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dndqodqks/ros2_ws/build/control_msgs', '--', '-j8', '-l8'], 'cwd': '/home/dndqodqks/ros2_ws/build/control_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/control_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.901815] (-) TimerEvent: {}
+[1.907995] (realtime_tools) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX static library librealtime_tools.a\x1b[0m\n'}
+[1.913484] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__cpp\x1b[0m\n'}
+[1.913935] (control_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.926672] (control_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.939929] (realtime_tools) StdoutLine: {'line': b'[ 29%] Built target realtime_tools\n'}
+[2.001900] (-) TimerEvent: {}
+[2.102320] (-) TimerEvent: {}
+[2.202670] (-) TimerEvent: {}
+[2.303017] (-) TimerEvent: {}
+[2.403352] (-) TimerEvent: {}
+[2.406037] (realtime_tools) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[2.440915] (realtime_tools) StdoutLine: {'line': b'[ 35%] Built target gmock_main\n'}
+[2.503456] (-) TimerEvent: {}
+[2.603722] (-) TimerEvent: {}
+[2.703985] (-) TimerEvent: {}
+[2.804270] (-) TimerEvent: {}
+[2.904497] (-) TimerEvent: {}
+[3.004698] (-) TimerEvent: {}
+[3.104900] (-) TimerEvent: {}
+[3.205094] (-) TimerEvent: {}
+[3.305293] (-) TimerEvent: {}
+[3.405524] (-) TimerEvent: {}
+[3.505728] (-) TimerEvent: {}
+[3.605928] (-) TimerEvent: {}
+[3.706157] (-) TimerEvent: {}
+[3.797859] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_generator_c\x1b[0m\n'}
+[3.803820] (control_msgs) StdoutLine: {'line': b'[  1%] Built target control_msgs__cpp\n'}
+[3.806258] (-) TimerEvent: {}
+[3.814275] (control_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.814505] (control_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.814741] (control_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.817879] (control_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/dynamic_joint_state__functions.c.o\x1b[0m\n'}
+[3.818083] (control_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_controller_state__functions.c.o\x1b[0m\n'}
+[3.818228] (control_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/interface_value__functions.c.o\x1b[0m\n'}
+[3.820142] (control_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/gripper_command__functions.c.o\x1b[0m\n'}
+[3.823988] (control_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_jog__functions.c.o\x1b[0m\n'}
+[3.874502] (control_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_tolerance__functions.c.o\x1b[0m\n'}
+[3.878410] (control_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/pid_state__functions.c.o\x1b[0m\n'}
+[3.878681] (control_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_trajectory_controller_state__functions.c.o\x1b[0m\n'}
+[3.885247] (control_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/srv/detail/query_calibration_state__functions.c.o\x1b[0m\n'}
+[3.906350] (-) TimerEvent: {}
+[3.910960] (control_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/srv/detail/query_trajectory_state__functions.c.o\x1b[0m\n'}
+[3.944526] (control_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/follow_joint_trajectory__functions.c.o\x1b[0m\n'}
+[3.948853] (control_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/gripper_command__functions.c.o\x1b[0m\n'}
+[3.959750] (control_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/joint_trajectory__functions.c.o\x1b[0m\n'}
+[3.986647] (control_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/point_head__functions.c.o\x1b[0m\n'}
+[3.989875] (control_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/single_joint_position__functions.c.o\x1b[0m\n'}
+[4.004556] (realtime_tools) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[4.006431] (-) TimerEvent: {}
+[4.106773] (-) TimerEvent: {}
+[4.149234] (realtime_tools) StdoutLine: {'line': b'[ 41%] Built target gmock\n'}
+[4.156173] (control_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libcontrol_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.160005] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_buffer_tests\x1b[0m\n'}
+[4.160301] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_publisher_tests\x1b[0m\n'}
+[4.160476] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_clock_tests\x1b[0m\n'}
+[4.164877] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_server_goal_handle_tests\x1b[0m\n'}
+[4.165414] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_box_tests\x1b[0m\n'}
+[4.185870] (realtime_tools) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realtime_buffer_tests.dir/test/realtime_buffer_tests.cpp.o\x1b[0m\n'}
+[4.193310] (realtime_tools) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/realtime_clock_tests.dir/test/realtime_clock_tests.cpp.o\x1b[0m\n'}
+[4.206871] (-) TimerEvent: {}
+[4.207657] (realtime_tools) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/realtime_box_tests.dir/test/realtime_box_tests.cpp.o\x1b[0m\n'}
+[4.217780] (realtime_tools) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/realtime_publisher_tests.dir/test/realtime_publisher_tests.cpp.o\x1b[0m\n'}
+[4.234208] (control_msgs) StdoutLine: {'line': b'[ 14%] Built target control_msgs__rosidl_generator_c\n'}
+[4.234463] (realtime_tools) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/realtime_server_goal_handle_tests.dir/test/realtime_server_goal_handle_tests.cpp.o\x1b[0m\n'}
+[4.249223] (control_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.280458] (control_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.306968] (-) TimerEvent: {}
+[4.407253] (-) TimerEvent: {}
+[4.507565] (-) TimerEvent: {}
+[4.607885] (-) TimerEvent: {}
+[4.708299] (-) TimerEvent: {}
+[4.808704] (-) TimerEvent: {}
+[4.909098] (-) TimerEvent: {}
+[5.009492] (-) TimerEvent: {}
+[5.109880] (-) TimerEvent: {}
+[5.210268] (-) TimerEvent: {}
+[5.310663] (-) TimerEvent: {}
+[5.411052] (-) TimerEvent: {}
+[5.511356] (-) TimerEvent: {}
+[5.611638] (-) TimerEvent: {}
+[5.689411] (realtime_tools) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable realtime_box_tests\x1b[0m\n'}
+[5.711740] (-) TimerEvent: {}
+[5.812038] (-) TimerEvent: {}
+[5.843803] (realtime_tools) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable realtime_buffer_tests\x1b[0m\n'}
+[5.878292] (realtime_tools) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable realtime_clock_tests\x1b[0m\n'}
+[5.912134] (-) TimerEvent: {}
+[6.012438] (-) TimerEvent: {}
+[6.059898] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_box_tests\n'}
+[6.112536] (-) TimerEvent: {}
+[6.170808] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[6.182243] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_clock_tests\n'}
+[6.198351] (control_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[6.212657] (control_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[6.212849] (-) TimerEvent: {}
+[6.222385] (control_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/interface_value__type_support.cpp.o\x1b[0m\n'}
+[6.232518] (control_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[6.256512] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_buffer_tests\n'}
+[6.312955] (-) TimerEvent: {}
+[6.413354] (-) TimerEvent: {}
+[6.513738] (-) TimerEvent: {}
+[6.614137] (-) TimerEvent: {}
+[6.641355] (control_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[6.712417] (control_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[6.714230] (-) TimerEvent: {}
+[6.794042] (control_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[6.814345] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/pid_state__type_support.cpp.o\x1b[0m\n'}
+[6.814560] (-) TimerEvent: {}
+[6.914809] (-) TimerEvent: {}
+[7.015117] (-) TimerEvent: {}
+[7.099089] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/srv/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[7.099492] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[7.115212] (-) TimerEvent: {}
+[7.140760] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[7.174179] (control_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/srv/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[7.202227] (control_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[7.215342] (-) TimerEvent: {}
+[7.226858] (control_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/interface_value__type_support.cpp.o\x1b[0m\n'}
+[7.246172] (control_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[7.266070] (control_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[7.303412] (control_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[7.313891] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.315423] (-) TimerEvent: {}
+[7.316111] (control_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[7.321299] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.365305] (control_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[7.369487] (control_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[7.380963] (control_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[7.415538] (-) TimerEvent: {}
+[7.473207] (control_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[7.515652] (-) TimerEvent: {}
+[7.526630] (control_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[7.529183] (control_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[7.536580] (control_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/pid_state__type_support.cpp.o\x1b[0m\n'}
+[7.615761] (-) TimerEvent: {}
+[7.657908] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.674795] (control_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/srv/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[7.709538] (control_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/interface_value__type_support.cpp.o\x1b[0m\n'}
+[7.715879] (-) TimerEvent: {}
+[7.726000] (control_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/srv/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[7.753744] (control_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/dynamic_joint_state__type_support.c.o\x1b[0m\n'}
+[7.815985] (-) TimerEvent: {}
+[7.824900] (control_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[7.838051] (control_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[7.849920] (control_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[7.890016] (control_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[7.905363] (control_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/interface_value__type_support.c.o\x1b[0m\n'}
+[7.916094] (-) TimerEvent: {}
+[7.952088] (control_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[7.977001] (control_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[8.006992] (control_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_controller_state__type_support.c.o\x1b[0m\n'}
+[8.016200] (-) TimerEvent: {}
+[8.028723] (control_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/point_head__type_support.cpp.o\x1b[0m\n'}
+[8.061125] (control_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[8.098221] (control_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[8.109683] (control_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_jog__type_support.c.o\x1b[0m\n'}
+[8.116315] (-) TimerEvent: {}
+[8.216654] (-) TimerEvent: {}
+[8.241355] (control_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/point_head__type_support.cpp.o\x1b[0m\n'}
+[8.253906] (control_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_tolerance__type_support.c.o\x1b[0m\n'}
+[8.290917] (control_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[8.302927] (control_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.c.o\x1b[0m\n'}
+[8.312804] (control_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/pid_state__type_support.c.o\x1b[0m\n'}
+[8.316760] (-) TimerEvent: {}
+[8.338147] (control_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[8.354356] (control_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/srv/detail/query_calibration_state__type_support.c.o\x1b[0m\n'}
+[8.398052] (control_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/pid_state__type_support.cpp.o\x1b[0m\n'}
+[8.398347] (control_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/srv/detail/query_trajectory_state__type_support.c.o\x1b[0m\n'}
+[8.416863] (-) TimerEvent: {}
+[8.418927] (control_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/follow_joint_trajectory__type_support.c.o\x1b[0m\n'}
+[8.430379] (control_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/interface_value__type_support.cpp.o\x1b[0m\n'}
+[8.462197] (control_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[8.472262] (control_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.516968] (-) TimerEvent: {}
+[8.547677] (control_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[8.560955] (control_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/joint_trajectory__type_support.c.o\x1b[0m\n'}
+[8.617078] (-) TimerEvent: {}
+[8.619897] (control_msgs) StdoutLine: {'line': b'[ 54%] Built target control_msgs__rosidl_typesupport_c\n'}
+[8.630903] (control_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[8.631134] (control_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[8.649484] (control_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/point_head__type_support.c.o\x1b[0m\n'}
+[8.669914] (control_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[8.707755] (control_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/single_joint_position__type_support.c.o\x1b[0m\n'}
+[8.717187] (-) TimerEvent: {}
+[8.817525] (-) TimerEvent: {}
+[8.827510] (control_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/srv/detail/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[8.829380] (control_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libcontrol_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.845349] (control_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/srv/detail/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[8.917633] (-) TimerEvent: {}
+[8.981012] (control_msgs) StdoutLine: {'line': b'[ 59%] Built target control_msgs__rosidl_typesupport_introspection_c\n'}
+[9.017738] (-) TimerEvent: {}
+[9.020416] (control_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.021436] (control_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[9.117848] (-) TimerEvent: {}
+[9.190216] (control_msgs) StdoutLine: {'line': b'[ 61%] Built target control_msgs__rosidl_typesupport_cpp\n'}
+[9.212044] (control_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/pid_state__type_support.cpp.o\x1b[0m\n'}
+[9.217955] (-) TimerEvent: {}
+[9.247399] (control_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[9.248039] (control_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/srv/detail/dds_fastrtps/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[9.278407] (control_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[9.295188] (control_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/srv/detail/dds_fastrtps/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[9.318063] (-) TimerEvent: {}
+[9.418511] (-) TimerEvent: {}
+[9.458893] (control_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[9.518624] (-) TimerEvent: {}
+[9.561789] (control_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[9.618728] (-) TimerEvent: {}
+[9.719131] (-) TimerEvent: {}
+[9.785660] (control_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/point_head__type_support.cpp.o\x1b[0m\n'}
+[9.819268] (-) TimerEvent: {}
+[9.846610] (control_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[9.919380] (-) TimerEvent: {}
+[9.930418] (control_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[10.019486] (-) TimerEvent: {}
+[10.046904] (control_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[10.119594] (-) TimerEvent: {}
+[10.224352] (-) TimerEvent: {}
+[10.281629] (control_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/point_head__type_support.cpp.o\x1b[0m\n'}
+[10.325893] (-) TimerEvent: {}
+[10.440419] (-) TimerEvent: {}
+[10.470035] (control_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[10.540539] (-) TimerEvent: {}
+[10.585942] (control_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.640639] (-) TimerEvent: {}
+[10.691003] (control_msgs) StdoutLine: {'line': b'[ 71%] Built target control_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[10.699942] (control_msgs) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.740731] (-) TimerEvent: {}
+[10.841045] (-) TimerEvent: {}
+[10.927262] (control_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.941144] (-) TimerEvent: {}
+[11.020292] (realtime_tools) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable realtime_server_goal_handle_tests\x1b[0m\n'}
+[11.020551] (control_msgs) StdoutLine: {'line': b'[ 73%] Built target control_msgs__rosidl_typesupport_introspection_cpp\n'}
+[11.041246] (-) TimerEvent: {}
+[11.141511] (-) TimerEvent: {}
+[11.241826] (-) TimerEvent: {}
+[11.271105] (realtime_tools) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable realtime_publisher_tests\x1b[0m\n'}
+[11.341932] (-) TimerEvent: {}
+[11.442281] (-) TimerEvent: {}
+[11.463433] (realtime_tools) StdoutLine: {'line': b'[100%] Built target realtime_server_goal_handle_tests\n'}
+[11.542366] (-) TimerEvent: {}
+[11.642640] (-) TimerEvent: {}
+[11.744341] (-) TimerEvent: {}
+[11.825718] (realtime_tools) StdoutLine: {'line': b'[100%] Built target realtime_publisher_tests\n'}
+[11.833947] (realtime_tools) CommandEnded: {'returncode': 0}
+[11.844452] (-) TimerEvent: {}
+[11.858126] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'install'}
+[11.867160] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dndqodqks/ros2_ws/build/realtime_tools'], 'cwd': '/home/dndqodqks/ros2_ws/build/realtime_tools', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/realtime_tools'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[11.878051] (realtime_tools) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.878456] (realtime_tools) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.878965] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_box.h\n'}
+[11.886293] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_buffer.h\n'}
+[11.893360] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_clock.h\n'}
+[11.900485] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_publisher.h\n'}
+[11.906992] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_server_goal_handle.h\n'}
+[11.914384] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/lib/librealtime_tools.a\n'}
+[11.921651] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.sh\n'}
+[11.928168] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.dsv\n'}
+[11.935268] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/package_run_dependencies/realtime_tools\n'}
+[11.941932] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/parent_prefix_path/realtime_tools\n'}
+[11.944509] (-) TimerEvent: {}
+[11.948632] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.sh\n'}
+[11.955763] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.dsv\n'}
+[11.962081] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.sh\n'}
+[11.969098] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.dsv\n'}
+[11.975713] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.bash\n'}
+[11.982461] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.sh\n'}
+[11.989474] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.zsh\n'}
+[11.995772] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.dsv\n'}
+[12.002755] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.dsv\n'}
+[12.009277] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/packages/realtime_tools\n'}
+[12.015613] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.022782] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.029791] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.037086] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig.cmake\n'}
+[12.043439] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig-version.cmake\n'}
+[12.044580] (-) TimerEvent: {}
+[12.050315] (realtime_tools) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.xml\n'}
+[12.058268] (realtime_tools) CommandEnded: {'returncode': 0}
+[12.120852] (realtime_tools) JobEnded: {'identifier': 'realtime_tools', 'rc': 0}
+[12.144667] (-) TimerEvent: {}
+[12.244872] (-) TimerEvent: {}
+[12.345091] (-) TimerEvent: {}
+[12.383075] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[12.418468] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_jog__type_support_c.cpp.o\x1b[0m\n'}
+[12.418702] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_tolerance__type_support_c.cpp.o\x1b[0m\n'}
+[12.418818] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_controller_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.418968] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[12.419096] (control_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/interface_value__type_support_c.cpp.o\x1b[0m\n'}
+[12.419397] (control_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/dynamic_joint_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.423989] (control_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_trajectory_controller_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.432096] (control_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/pid_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.445196] (-) TimerEvent: {}
+[12.545591] (-) TimerEvent: {}
+[12.646100] (-) TimerEvent: {}
+[12.746416] (-) TimerEvent: {}
+[12.846736] (-) TimerEvent: {}
+[12.880876] (control_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/srv/detail/query_calibration_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.886802] (control_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/srv/detail/query_trajectory_state__type_support_c.cpp.o\x1b[0m\n'}
+[12.914208] (control_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/follow_joint_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[12.943681] (control_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[12.946839] (-) TimerEvent: {}
+[12.948058] (control_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/joint_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[12.957451] (control_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/point_head__type_support_c.cpp.o\x1b[0m\n'}
+[12.979638] (control_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/single_joint_position__type_support_c.cpp.o\x1b[0m\n'}
+[13.046944] (-) TimerEvent: {}
+[13.147360] (-) TimerEvent: {}
+[13.247760] (-) TimerEvent: {}
+[13.348182] (-) TimerEvent: {}
+[13.448569] (-) TimerEvent: {}
+[13.518781] (control_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.548688] (-) TimerEvent: {}
+[13.594524] (control_msgs) StdoutLine: {'line': b'[ 84%] Built target control_msgs__rosidl_typesupport_fastrtps_c\n'}
+[13.601843] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs\x1b[0m\n'}
+[13.609334] (control_msgs) StdoutLine: {'line': b'[ 84%] Built target control_msgs\n'}
+[13.616919] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__py\x1b[0m\n'}
+[13.624967] (control_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.648797] (-) TimerEvent: {}
+[13.749126] (-) TimerEvent: {}
+[13.849363] (-) TimerEvent: {}
+[13.949613] (-) TimerEvent: {}
+[14.049937] (-) TimerEvent: {}
+[14.150245] (-) TimerEvent: {}
+[14.250481] (-) TimerEvent: {}
+[14.350694] (-) TimerEvent: {}
+[14.450988] (-) TimerEvent: {}
+[14.551222] (-) TimerEvent: {}
+[14.651450] (-) TimerEvent: {}
+[14.751703] (-) TimerEvent: {}
+[14.851940] (-) TimerEvent: {}
+[14.952139] (-) TimerEvent: {}
+[15.052375] (-) TimerEvent: {}
+[15.152581] (-) TimerEvent: {}
+[15.252773] (-) TimerEvent: {}
+[15.352994] (-) TimerEvent: {}
+[15.453221] (-) TimerEvent: {}
+[15.553483] (-) TimerEvent: {}
+[15.653689] (-) TimerEvent: {}
+[15.753942] (-) TimerEvent: {}
+[15.854165] (-) TimerEvent: {}
+[15.954376] (-) TimerEvent: {}
+[16.054615] (-) TimerEvent: {}
+[16.154878] (-) TimerEvent: {}
+[16.255097] (-) TimerEvent: {}
+[16.355303] (-) TimerEvent: {}
+[16.455507] (-) TimerEvent: {}
+[16.555744] (-) TimerEvent: {}
+[16.655997] (-) TimerEvent: {}
+[16.756226] (-) TimerEvent: {}
+[16.856471] (-) TimerEvent: {}
+[16.956666] (-) TimerEvent: {}
+[17.056862] (-) TimerEvent: {}
+[17.157094] (-) TimerEvent: {}
+[17.257322] (-) TimerEvent: {}
+[17.357563] (-) TimerEvent: {}
+[17.361864] (control_msgs) StdoutLine: {'line': b'[ 85%] Built target control_msgs__py\n'}
+[17.370527] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__python\x1b[0m\n'}
+[17.405313] (control_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_interface_value_s.c.o\x1b[0m\n'}
+[17.406025] (control_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_controller_state_s.c.o\x1b[0m\n'}
+[17.406193] (control_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_jog_s.c.o\x1b[0m\n'}
+[17.406436] (control_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_dynamic_joint_state_s.c.o\x1b[0m\n'}
+[17.406772] (control_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_gripper_command_s.c.o\x1b[0m\n'}
+[17.407460] (control_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_tolerance_s.c.o\x1b[0m\n'}
+[17.411971] (control_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_pid_state_s.c.o\x1b[0m\n'}
+[17.412255] (control_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_trajectory_controller_state_s.c.o\x1b[0m\n'}
+[17.457671] (-) TimerEvent: {}
+[17.519557] (control_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/srv/_query_calibration_state_s.c.o\x1b[0m\n'}
+[17.524923] (control_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/srv/_query_trajectory_state_s.c.o\x1b[0m\n'}
+[17.525413] (control_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_follow_joint_trajectory_s.c.o\x1b[0m\n'}
+[17.534466] (control_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_gripper_command_s.c.o\x1b[0m\n'}
+[17.534702] (control_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_joint_trajectory_s.c.o\x1b[0m\n'}
+[17.537603] (control_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_single_joint_position_s.c.o\x1b[0m\n'}
+[17.538056] (control_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_point_head_s.c.o\x1b[0m\n'}
+[17.557771] (-) TimerEvent: {}
+[17.658141] (-) TimerEvent: {}
+[17.703068] (control_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/libcontrol_msgs__python.so\x1b[0m\n'}
+[17.741925] (control_msgs) StdoutLine: {'line': b'[ 96%] Built target control_msgs__python\n'}
+[17.749039] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[17.749327] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[17.749503] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[17.758244] (-) TimerEvent: {}
+[17.767487] (control_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.767919] (control_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[17.768587] (control_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.858342] (-) TimerEvent: {}
+[17.958650] (-) TimerEvent: {}
+[17.971341] (control_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.971489] (control_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.974330] (control_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.009059] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_c__pyext\n'}
+[18.012160] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[18.034236] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[18.043210] (control_msgs) CommandEnded: {'returncode': 0}
+[18.058749] (-) TimerEvent: {}
+[18.159092] (-) TimerEvent: {}
+[18.177159] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'install'}
+[18.178636] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dndqodqks/ros2_ws/build/control_msgs'], 'cwd': '/home/dndqodqks/ros2_ws/build/control_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dndqodqks'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('SSH_AGENT_PID', '1898'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dndqodqks'), ('OLDPWD', '/home/dndqodqks'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1660'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4473'), ('_colcon_cd_root', '/home/dndqodqks/ros2_ws'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/dndqodqks/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dndqodqks'), ('JOURNAL_STREAM', '8:45395'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dndqodqks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ddq:@/tmp/.ICE-unix/1936,unix/ddq:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '76af80bd11f14dcfb61e9c79a1fcc2ed'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:cabeb067-e217-4f38-bc95-997ed5a8cb54'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/dndqodqks/ros2_ws/build/control_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.184608] (control_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.185145] (control_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.185442] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/ament_index/resource_index/rosidl_interfaces/control_msgs\n'}
+[18.192745] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__functions.h\n'}
+[18.198690] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__struct.h\n'}
+[18.204550] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__type_support.h\n'}
+[18.210375] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__functions.h\n'}
+[18.216086] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__struct.h\n'}
+[18.221904] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__type_support.h\n'}
+[18.227879] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__functions.h\n'}
+[18.234066] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__struct.h\n'}
+[18.239982] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__type_support.h\n'}
+[18.246016] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__functions.h\n'}
+[18.251983] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__struct.h\n'}
+[18.257903] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__type_support.h\n'}
+[18.259210] (-) TimerEvent: {}
+[18.263930] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__functions.h\n'}
+[18.270013] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__struct.h\n'}
+[18.275918] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__type_support.h\n'}
+[18.281965] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/follow_joint_trajectory.h\n'}
+[18.288227] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/gripper_command.h\n'}
+[18.294464] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/joint_trajectory.h\n'}
+[18.300508] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/point_head.h\n'}
+[18.306527] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/single_joint_position.h\n'}
+[18.312599] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__functions.h\n'}
+[18.318638] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__struct.h\n'}
+[18.324639] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__type_support.h\n'}
+[18.330552] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__functions.h\n'}
+[18.336604] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__struct.h\n'}
+[18.342474] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__type_support.h\n'}
+[18.348497] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__functions.h\n'}
+[18.354296] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__struct.h\n'}
+[18.359312] (-) TimerEvent: {}
+[18.360133] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__type_support.h\n'}
+[18.366021] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__functions.h\n'}
+[18.372044] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__struct.h\n'}
+[18.378036] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__type_support.h\n'}
+[18.383922] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__functions.h\n'}
+[18.390358] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__struct.h\n'}
+[18.396267] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__type_support.h\n'}
+[18.402154] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__functions.h\n'}
+[18.408046] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__struct.h\n'}
+[18.413886] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__type_support.h\n'}
+[18.419908] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__functions.h\n'}
+[18.426299] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__struct.h\n'}
+[18.432218] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.h\n'}
+[18.438073] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__functions.h\n'}
+[18.444082] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__struct.h\n'}
+[18.449928] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__type_support.h\n'}
+[18.455741] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/dynamic_joint_state.h\n'}
+[18.459412] (-) TimerEvent: {}
+[18.461594] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/gripper_command.h\n'}
+[18.467474] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/interface_value.h\n'}
+[18.473506] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_controller_state.h\n'}
+[18.479313] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_jog.h\n'}
+[18.485256] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_tolerance.h\n'}
+[18.491363] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_trajectory_controller_state.h\n'}
+[18.497347] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/pid_state.h\n'}
+[18.503064] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[18.508849] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__functions.h\n'}
+[18.514603] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__struct.h\n'}
+[18.520253] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__type_support.h\n'}
+[18.526103] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__functions.h\n'}
+[18.531793] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__struct.h\n'}
+[18.537615] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__type_support.h\n'}
+[18.543188] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/query_calibration_state.h\n'}
+[18.548938] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/query_trajectory_state.h\n'}
+[18.555719] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/library_path.sh\n'}
+[18.559517] (-) TimerEvent: {}
+[18.561829] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/library_path.dsv\n'}
+[18.568534] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[18.574451] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[18.580054] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[18.586091] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_fastrtps_c.h\n'}
+[18.592265] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_fastrtps_c.h\n'}
+[18.598143] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.603937] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[18.609554] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_fastrtps_c.h\n'}
+[18.615127] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.620881] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_fastrtps_c.h\n'}
+[18.626516] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_fastrtps_c.h\n'}
+[18.632113] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.637935] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.643567] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[18.649876] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.657108] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_fastrtps_c.h\n'}
+[18.659655] (-) TimerEvent: {}
+[18.664254] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[18.671292] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.677233] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.683096] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.690943] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.698535] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.708977] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.717107] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.723279] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.729163] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.735770] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.742513] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.748716] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.755598] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.759767] (-) TimerEvent: {}
+[18.762201] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[18.769206] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.775874] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.782347] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.790181] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[18.796200] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[18.803436] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[18.809845] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_introspection_c.h\n'}
+[18.816065] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_introspection_c.h\n'}
+[18.823412] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_introspection_c.h\n'}
+[18.829621] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[18.837015] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_introspection_c.h\n'}
+[18.843738] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_introspection_c.h\n'}
+[18.850573] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_introspection_c.h\n'}
+[18.857415] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_introspection_c.h\n'}
+[18.859865] (-) TimerEvent: {}
+[18.863696] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_introspection_c.h\n'}
+[18.870472] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_introspection_c.h\n'}
+[18.876997] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[18.883343] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_introspection_c.h\n'}
+[18.890242] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_introspection_c.h\n'}
+[18.896952] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__builder.hpp\n'}
+[18.903808] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__struct.hpp\n'}
+[18.910239] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__traits.hpp\n'}
+[18.916552] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__builder.hpp\n'}
+[18.923132] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__struct.hpp\n'}
+[18.929116] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__traits.hpp\n'}
+[18.935658] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__builder.hpp\n'}
+[18.941801] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__struct.hpp\n'}
+[18.947688] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__traits.hpp\n'}
+[18.954284] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__builder.hpp\n'}
+[18.959965] (-) TimerEvent: {}
+[18.960242] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__struct.hpp\n'}
+[18.966756] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__traits.hpp\n'}
+[18.973215] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__builder.hpp\n'}
+[18.979006] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__struct.hpp\n'}
+[18.985552] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__traits.hpp\n'}
+[18.991732] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/follow_joint_trajectory.hpp\n'}
+[18.998096] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/gripper_command.hpp\n'}
+[19.004343] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/joint_trajectory.hpp\n'}
+[19.010422] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/point_head.hpp\n'}
+[19.016547] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/single_joint_position.hpp\n'}
+[19.023092] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__builder.hpp\n'}
+[19.029002] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__struct.hpp\n'}
+[19.035188] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__traits.hpp\n'}
+[19.041054] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__builder.hpp\n'}
+[19.046807] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__struct.hpp\n'}
+[19.052663] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__traits.hpp\n'}
+[19.058423] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__builder.hpp\n'}
+[19.060057] (-) TimerEvent: {}
+[19.064124] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__struct.hpp\n'}
+[19.069965] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__traits.hpp\n'}
+[19.075882] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__builder.hpp\n'}
+[19.081621] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__struct.hpp\n'}
+[19.087644] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__traits.hpp\n'}
+[19.093649] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__builder.hpp\n'}
+[19.099686] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__struct.hpp\n'}
+[19.105689] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__traits.hpp\n'}
+[19.111502] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__builder.hpp\n'}
+[19.117331] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__struct.hpp\n'}
+[19.123079] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__traits.hpp\n'}
+[19.128847] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__builder.hpp\n'}
+[19.134545] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__struct.hpp\n'}
+[19.140403] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__traits.hpp\n'}
+[19.146082] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__builder.hpp\n'}
+[19.151749] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__struct.hpp\n'}
+[19.157633] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__traits.hpp\n'}
+[19.160158] (-) TimerEvent: {}
+[19.163545] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/dynamic_joint_state.hpp\n'}
+[19.169334] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/gripper_command.hpp\n'}
+[19.175025] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/interface_value.hpp\n'}
+[19.180786] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_controller_state.hpp\n'}
+[19.186684] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_jog.hpp\n'}
+[19.193136] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_tolerance.hpp\n'}
+[19.199129] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_trajectory_controller_state.hpp\n'}
+[19.204995] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/pid_state.hpp\n'}
+[19.210821] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__builder.hpp\n'}
+[19.216636] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__struct.hpp\n'}
+[19.222408] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__traits.hpp\n'}
+[19.228177] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__builder.hpp\n'}
+[19.233970] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__struct.hpp\n'}
+[19.239646] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__traits.hpp\n'}
+[19.245823] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/query_calibration_state.hpp\n'}
+[19.252071] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/query_trajectory_state.hpp\n'}
+[19.258867] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.260253] (-) TimerEvent: {}
+[19.264936] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.270724] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.276557] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.282285] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.288565] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.294463] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.300315] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.305998] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.312026] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.317790] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.323568] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.329362] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.335008] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.340675] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.346705] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/pythonpath.sh\n'}
+[19.352829] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/pythonpath.dsv\n'}
+[19.359135] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/__init__.py\n'}
+[19.360317] (-) TimerEvent: {}
+[19.365539] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/__init__.py\n'}
+[19.371572] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_dynamic_joint_state.py\n'}
+[19.377484] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_gripper_command.py\n'}
+[19.383226] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_interface_value.py\n'}
+[19.389519] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_controller_state.py\n'}
+[19.395466] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_jog.py\n'}
+[19.401394] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_tolerance.py\n'}
+[19.407189] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_trajectory_controller_state.py\n'}
+[19.413035] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_pid_state.py\n'}
+[19.419113] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/__init__.py\n'}
+[19.424948] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_calibration_state.py\n'}
+[19.430636] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_trajectory_state.py\n'}
+[19.436771] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/__init__.py\n'}
+[19.442556] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_follow_joint_trajectory.py\n'}
+[19.448179] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_gripper_command.py\n'}
+[19.454066] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_joint_trajectory.py\n'}
+[19.459742] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_point_head.py\n'}
+[19.460380] (-) TimerEvent: {}
+[19.465468] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_single_joint_position.py\n'}
+[19.471497] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.477623] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.483575] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.489849] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__python.so\n'}
+[19.495994] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/DynamicJointState.idl\n'}
+[19.501939] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/GripperCommand.idl\n'}
+[19.507804] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/InterfaceValue.idl\n'}
+[19.513622] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointControllerState.idl\n'}
+[19.519446] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointJog.idl\n'}
+[19.525316] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTolerance.idl\n'}
+[19.531121] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTrajectoryControllerState.idl\n'}
+[19.537011] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/PidState.idl\n'}
+[19.542825] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState.idl\n'}
+[19.548879] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState.idl\n'}
+[19.554735] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/FollowJointTrajectory.idl\n'}
+[19.560456] (-) TimerEvent: {}
+[19.560791] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/GripperCommand.idl\n'}
+[19.566711] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/JointTrajectory.idl\n'}
+[19.572711] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/PointHead.idl\n'}
+[19.578537] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/SingleJointPosition.idl\n'}
+[19.584545] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/DynamicJointState.msg\n'}
+[19.591240] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/GripperCommand.msg\n'}
+[19.597365] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/InterfaceValue.msg\n'}
+[19.603204] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointControllerState.msg\n'}
+[19.609119] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointJog.msg\n'}
+[19.614908] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTolerance.msg\n'}
+[19.620770] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTrajectoryControllerState.msg\n'}
+[19.626533] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/msg/PidState.msg\n'}
+[19.632470] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState.srv\n'}
+[19.638414] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState_Request.msg\n'}
+[19.644320] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState_Response.msg\n'}
+[19.650292] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState.srv\n'}
+[19.656115] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState_Request.msg\n'}
+[19.660524] (-) TimerEvent: {}
+[19.662054] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState_Response.msg\n'}
+[19.667998] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/FollowJointTrajectory.action\n'}
+[19.674429] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/GripperCommand.action\n'}
+[19.680530] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/JointTrajectory.action\n'}
+[19.686633] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/PointHead.action\n'}
+[19.693203] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/action/SingleJointPosition.action\n'}
+[19.699289] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/ament_index/resource_index/package_run_dependencies/control_msgs\n'}
+[19.705428] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/ament_index/resource_index/parent_prefix_path/control_msgs\n'}
+[19.711318] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/ament_prefix_path.sh\n'}
+[19.717142] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/ament_prefix_path.dsv\n'}
+[19.723040] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/path.sh\n'}
+[19.728974] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/environment/path.dsv\n'}
+[19.734760] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/local_setup.bash\n'}
+[19.740668] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/local_setup.sh\n'}
+[19.746387] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/local_setup.zsh\n'}
+[19.752087] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/local_setup.dsv\n'}
+[19.757900] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.dsv\n'}
+[19.760613] (-) TimerEvent: {}
+[19.763944] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/ament_index/resource_index/packages/control_msgs\n'}
+[19.770035] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[19.775970] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.781884] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.787884] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[19.794248] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.801835] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[19.808909] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[19.815360] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgsConfig.cmake\n'}
+[19.821470] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgsConfig-version.cmake\n'}
+[19.827817] (control_msgs) StdoutLine: {'line': b'-- Symlinking: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.xml\n'}
+[19.834057] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_generator_c.so\n'}
+[19.834467] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_generator_c.so" to ""\n'}
+[19.834629] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so\n'}
+[19.834803] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[19.834883] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_c.so\n'}
+[19.835089] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_c.so" to ""\n'}
+[19.835177] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[19.835630] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[19.835756] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_cpp.so\n'}
+[19.835980] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/dndqodqks/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[19.857865] (control_msgs) StdoutLine: {'line': b"Compiling '/home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/__init__.py'...\n"}
+[19.860645] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cExport.cmake\n'}
+[19.860754] (-) TimerEvent: {}
+[19.860863] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[19.860954] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[19.861039] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[19.861130] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cExport.cmake\n'}
+[19.861219] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[19.861332] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cppExport.cmake\n'}
+[19.861450] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[19.861539] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[19.861620] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[19.861710] (control_msgs) StdoutLine: {'line': b'-- Installing: /home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[19.863087] (control_msgs) CommandEnded: {'returncode': 0}
+[19.960867] (-) TimerEvent: {}
+[20.041713] (control_msgs) JobEnded: {'identifier': 'control_msgs', 'rc': 0}
+[20.042282] (-) EventReactorShutdown: {}

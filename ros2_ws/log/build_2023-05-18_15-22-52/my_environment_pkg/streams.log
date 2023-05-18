@@ -1,0 +1,32 @@
+[0.900s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[1.073s] running develop
+[1.170s] running egg_info
+[1.170s] creating my_environment_pkg.egg-info
+[1.170s] writing my_environment_pkg.egg-info/PKG-INFO
+[1.170s] writing dependency_links to my_environment_pkg.egg-info/dependency_links.txt
+[1.170s] writing entry points to my_environment_pkg.egg-info/entry_points.txt
+[1.171s] writing requirements to my_environment_pkg.egg-info/requires.txt
+[1.171s] writing top-level names to my_environment_pkg.egg-info/top_level.txt
+[1.171s] writing manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[1.195s] reading manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[1.196s] writing manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[1.222s] running build_ext
+[1.222s] Creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/site.py
+[1.223s] Creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my-environment-pkg.egg-link (link to .)
+[1.224s] Installing data_collection script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[1.224s] Installing run_environment script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[1.224s] 
+[1.224s] Installed /home/dndqodqks/ros2_ws/build/my_environment_pkg
+[1.224s] running install_data
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/ament_index
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index/packages
+[1.225s] copying resource/my_environment_pkg -> /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index/packages
+[1.225s] copying package.xml -> /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/launch
+[1.225s] copying launch/my_environment.launch.py -> /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/launch
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/rviz
+[1.225s] copying rviz/my_rviz_env.rviz -> /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/rviz
+[1.225s] creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/worlds
+[1.225s] copying worlds/my_world.world -> /home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/worlds
+[1.252s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
