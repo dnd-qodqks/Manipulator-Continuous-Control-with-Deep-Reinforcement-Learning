@@ -1,0 +1,18 @@
+[1.131s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build --no-deps install_data
+[1.333s] running develop
+[1.413s] running egg_info
+[1.414s] writing my_sphere_pkg.egg-info/PKG-INFO
+[1.414s] writing dependency_links to my_sphere_pkg.egg-info/dependency_links.txt
+[1.414s] writing entry points to my_sphere_pkg.egg-info/entry_points.txt
+[1.414s] writing requirements to my_sphere_pkg.egg-info/requires.txt
+[1.414s] writing top-level names to my_sphere_pkg.egg-info/top_level.txt
+[1.444s] reading manifest file 'my_sphere_pkg.egg-info/SOURCES.txt'
+[1.445s] writing manifest file 'my_sphere_pkg.egg-info/SOURCES.txt'
+[1.474s] running build_ext
+[1.474s] Creating /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages/my-sphere-pkg.egg-link (link to .)
+[1.477s] Installing my_client_node script to /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/my_sphere_pkg
+[1.478s] Installing reader_mark_node script to /home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/my_sphere_pkg
+[1.478s] 
+[1.478s] Installed /home/dndqodqks/ros2_ws/build/my_sphere_pkg
+[1.478s] running install_data
+[1.508s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build --no-deps install_data

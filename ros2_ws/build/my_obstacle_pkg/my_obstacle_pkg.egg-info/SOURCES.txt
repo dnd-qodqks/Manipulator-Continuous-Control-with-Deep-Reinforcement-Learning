@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+description/obstacle.urdf
+launch/my_obstacle.launch.py
+launch/test.launch.py
+my_obstacle_pkg/__init__.py
+my_obstacle_pkg.egg-info/PKG-INFO
+my_obstacle_pkg.egg-info/SOURCES.txt
+my_obstacle_pkg.egg-info/dependency_links.txt
+my_obstacle_pkg.egg-info/entry_points.txt
+my_obstacle_pkg.egg-info/requires.txt
+my_obstacle_pkg.egg-info/top_level.txt
+my_obstacle_pkg.egg-info/zip-safe
+resource/my_obstacle_pkg

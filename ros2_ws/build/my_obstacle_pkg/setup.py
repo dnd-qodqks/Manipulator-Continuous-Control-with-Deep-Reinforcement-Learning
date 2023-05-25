@@ -1,0 +1,1 @@
+/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_obstacle_pkg/setup.py

@@ -1,0 +1,24 @@
+[1.132s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data
+[1.316s] running develop
+[1.396s] running egg_info
+[1.396s] creating my_obstacle_pkg.egg-info
+[1.396s] writing my_obstacle_pkg.egg-info/PKG-INFO
+[1.397s] writing dependency_links to my_obstacle_pkg.egg-info/dependency_links.txt
+[1.397s] writing entry points to my_obstacle_pkg.egg-info/entry_points.txt
+[1.397s] writing requirements to my_obstacle_pkg.egg-info/requires.txt
+[1.397s] writing top-level names to my_obstacle_pkg.egg-info/top_level.txt
+[1.398s] writing manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[1.424s] reading manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[1.425s] writing manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[1.459s] running build_ext
+[1.459s] Creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages/site.py
+[1.459s] Creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages/my-obstacle-pkg.egg-link (link to .)
+[1.459s] 
+[1.459s] Installed /home/dndqodqks/ros2_ws/build/my_obstacle_pkg
+[1.459s] running install_data
+[1.459s] creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/ament_index
+[1.460s] creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/ament_index/resource_index
+[1.460s] creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/ament_index/resource_index/packages
+[1.460s] copying resource/my_obstacle_pkg -> /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/ament_index/resource_index/packages
+[1.460s] copying package.xml -> /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg
+[1.492s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data

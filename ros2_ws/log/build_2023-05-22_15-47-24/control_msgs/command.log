@@ -1,0 +1,2 @@
+Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
+Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '2': /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8

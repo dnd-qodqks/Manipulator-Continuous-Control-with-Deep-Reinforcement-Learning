@@ -1,0 +1,80 @@
+[0.556s] Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+[0.599s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.621s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.832s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.841s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.886s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.890s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.034s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.109s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.112s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.324s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[1.394s] -- Found ament_cmake_cppcheck: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[1.394s] -- Found ament_cmake_cpplint: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[1.394s] -- Found ament_cmake_lint_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake)
+[1.395s] -- Found ament_cmake_uncrustify: 0.9.8 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[1.396s] -- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)
+[1.397s] -- Found test_msgs: 1.0.0 (/opt/ros/foxy/share/test_msgs/cmake)
+[1.460s] -- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[1.462s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.462s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.520s] -- Configuring done
+[1.646s] -- Generating done
+[1.650s] -- Build files have been written to: /home/dndqodqks/ros2_ws/build/realtime_tools
+[1.692s] [35m[1mScanning dependencies of target realtime_tools[0m
+[1.753s] [  5%] [32mBuilding CXX object CMakeFiles/realtime_tools.dir/src/realtime_clock.cpp.o[0m
+[1.787s] [ 17%] Built target gmock_main
+[1.811s] [ 35%] Built target gmock
+[2.795s] [ 41%] [32m[1mLinking CXX static library librealtime_tools.a[0m
+[2.881s] [ 41%] Built target realtime_tools
+[2.909s] [35m[1mScanning dependencies of target realtime_buffer_tests[0m
+[2.942s] [35m[1mScanning dependencies of target realtime_publisher_tests[0m
+[2.954s] [35m[1mScanning dependencies of target realtime_box_tests[0m
+[2.989s] [35m[1mScanning dependencies of target realtime_clock_tests[0m
+[2.998s] [35m[1mScanning dependencies of target realtime_server_goal_handle_tests[0m
+[3.022s] [ 47%] [32mBuilding CXX object CMakeFiles/realtime_buffer_tests.dir/test/realtime_buffer_tests.cpp.o[0m
+[3.024s] [ 52%] [32mBuilding CXX object CMakeFiles/realtime_publisher_tests.dir/test/realtime_publisher_tests.cpp.o[0m
+[3.035s] [ 58%] [32mBuilding CXX object CMakeFiles/realtime_box_tests.dir/test/realtime_box_tests.cpp.o[0m
+[3.052s] [ 64%] [32mBuilding CXX object CMakeFiles/realtime_server_goal_handle_tests.dir/test/realtime_server_goal_handle_tests.cpp.o[0m
+[3.062s] [ 70%] [32mBuilding CXX object CMakeFiles/realtime_clock_tests.dir/test/realtime_clock_tests.cpp.o[0m
+[4.728s] [ 76%] [32m[1mLinking CXX executable realtime_box_tests[0m
+[4.938s] [ 82%] [32m[1mLinking CXX executable realtime_buffer_tests[0m
+[5.328s] [ 82%] Built target realtime_box_tests
+[5.518s] [ 82%] Built target realtime_buffer_tests
+[5.886s] [ 88%] [32m[1mLinking CXX executable realtime_clock_tests[0m
+[6.136s] [ 88%] Built target realtime_clock_tests
+[9.424s] [ 94%] [32m[1mLinking CXX executable realtime_server_goal_handle_tests[0m
+[9.790s] [ 94%] Built target realtime_server_goal_handle_tests
+[9.967s] [100%] [32m[1mLinking CXX executable realtime_publisher_tests[0m
+[10.336s] [100%] Built target realtime_publisher_tests
+[10.348s] Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+[10.391s] Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools
+[10.414s] -- Install configuration: ""
+[10.414s] -- Execute custom install script
+[10.414s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_box.h
+[10.414s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_buffer.h
+[10.414s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_clock.h
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_publisher.h
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_server_goal_handle.h
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/lib/librealtime_tools.a
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.sh
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.dsv
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/package_run_dependencies/realtime_tools
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/parent_prefix_path/realtime_tools
+[10.415s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.sh
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.dsv
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.sh
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.dsv
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.bash
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.sh
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.zsh
+[10.416s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.dsv
+[10.416s] -- Symlinking: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.dsv
+[10.423s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/ament_index/resource_index/packages/realtime_tools
+[10.423s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.423s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_libraries-extras.cmake
+[10.423s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.423s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig.cmake
+[10.424s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig-version.cmake
+[10.424s] -- Up-to-date symlink: /home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.xml
+[10.431s] Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools

@@ -1,0 +1,23 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dndqodqks/ros2_ws/build/my_sphere_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/build/my_environment_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/build/my_doosan_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dndqodqks/ros2_ws/build/my_sphere_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/build/my_environment_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/build/my_doosan_pkg",
+        "/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages",
+        "/home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "ros.distro": "foxy"
+}

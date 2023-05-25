@@ -31,8 +31,9 @@ from launch.actions import ExecuteProcess
 
 def generate_launch_description():
 
-	my_sphere_files       = get_package_share_directory('my_sphere_pkg')
 	my_doosan_robot_files = get_package_share_directory('my_doosan_pkg')
+	my_sphere_files       = get_package_share_directory('my_sphere_pkg')
+	my_obstacle_files	  = get_package_share_directory('my_obstacle_pkg')
 	my_environmets_files  = get_package_share_directory('my_environment_pkg')
 
 	# Start doosan robot and controller
@@ -41,7 +42,9 @@ def generate_launch_description():
 	# Start sphere mark
 	sphere_mark  = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_sphere_files + '/launch/my_sphere.launch.py')) 
 
-
+	# Start obstacle object
+	obstacle_object = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_obstacle_files + '/launch/my_obstacle.launch.py')) 
+ 
 	'''
 	# Start Rviz
 	rviz_file = my_environmets_files + "/rviz/my_rviz_env.rviz"
@@ -63,9 +66,10 @@ def generate_launch_description():
 
 	ld = LaunchDescription()
 
-	ld.add_action (doosan_robot)
-	ld.add_action (sphere_mark)
-	ld.add_action (gazebo_node)
+	ld.add_action(doosan_robot)
+	ld.add_action(sphere_mark)
+	ld.add_action(obstacle_object)
+	ld.add_action(gazebo_node)
 	#ld.add_action (rviz_node)
 
 	return ld
