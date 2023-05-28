@@ -1,0 +1,18 @@
+[1.148s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_doosan_pkg': CONDA_PROMPT_MODIFIER=(torch) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_doosan_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_doosan_pkg/build --no-deps install_data
+[1.347s] running develop
+[1.428s] running egg_info
+[1.429s] writing my_doosan_pkg.egg-info/PKG-INFO
+[1.429s] writing dependency_links to my_doosan_pkg.egg-info/dependency_links.txt
+[1.429s] writing entry points to my_doosan_pkg.egg-info/entry_points.txt
+[1.429s] writing requirements to my_doosan_pkg.egg-info/requires.txt
+[1.429s] writing top-level names to my_doosan_pkg.egg-info/top_level.txt
+[1.455s] reading manifest file 'my_doosan_pkg.egg-info/SOURCES.txt'
+[1.457s] writing manifest file 'my_doosan_pkg.egg-info/SOURCES.txt'
+[1.497s] running build_ext
+[1.497s] Creating /home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages/my-doosan-pkg.egg-link (link to .)
+[1.497s] Installing trajectory_points_act_server script to /home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/my_doosan_pkg
+[1.498s] Installing trajectory_points_topic script to /home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/my_doosan_pkg
+[1.498s] 
+[1.498s] Installed /home/dndqodqks/ros2_ws/build/my_doosan_pkg
+[1.498s] running install_data
+[1.528s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_doosan_pkg' returned '0': CONDA_PROMPT_MODIFIER=(torch) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_doosan_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_doosan_pkg/build --no-deps install_data

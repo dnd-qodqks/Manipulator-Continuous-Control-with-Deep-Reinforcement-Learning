@@ -1,0 +1,19 @@
+[1.336s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[1.571s] running develop
+[1.728s] running egg_info
+[1.728s] writing my_environment_pkg.egg-info/PKG-INFO
+[1.728s] writing dependency_links to my_environment_pkg.egg-info/dependency_links.txt
+[1.728s] writing entry points to my_environment_pkg.egg-info/entry_points.txt
+[1.728s] writing requirements to my_environment_pkg.egg-info/requires.txt
+[1.728s] writing top-level names to my_environment_pkg.egg-info/top_level.txt
+[1.755s] reading manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[1.756s] writing manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[1.784s] running build_ext
+[1.784s] Creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my-environment-pkg.egg-link (link to .)
+[1.785s] Installing data_collection script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[1.785s] Installing run_ddpg script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[1.785s] Installing run_environment script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[1.785s] 
+[1.785s] Installed /home/dndqodqks/ros2_ws/build/my_environment_pkg
+[1.785s] running install_data
+[1.806s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data

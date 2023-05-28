@@ -65,6 +65,8 @@ class MyRLEnvironmentNode(Node):
 
 		print ("initializing.....")
 		
+		self.goal = False
+
 		# end-effector transformation
 		self.tf_buffer   = tf2_ros.Buffer()
 		self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
@@ -197,11 +199,11 @@ class MyRLEnvironmentNode(Node):
 		home_point_msg.positions     = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 		home_point_msg.velocities    = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 		home_point_msg.accelerations = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-		home_point_msg.time_from_start = Duration(seconds=2).to_msg()
+		home_point_msg.time_from_start = Duration(seconds=1.0).to_msg()
 
 		joint_names   = ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
 		home_goal_msg = FollowJointTrajectory.Goal()
-		home_goal_msg.goal_time_tolerance    = Duration(seconds=1).to_msg()
+		home_goal_msg.goal_time_tolerance    = Duration(seconds=0.5).to_msg()
 		home_goal_msg.trajectory.joint_names = joint_names
 		home_goal_msg.trajectory.points      = [home_point_msg]
 		
@@ -237,12 +239,12 @@ class MyRLEnvironmentNode(Node):
 		point_msg.positions     = action_values
 		point_msg.velocities    = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 		point_msg.accelerations = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-		point_msg.time_from_start = Duration(seconds=2.0).to_msg() # be careful about this time 
+		point_msg.time_from_start = Duration(seconds=1.0).to_msg() # be careful about this time 
 		points.append(point_msg) 
 
 		joint_names = ['joint1','joint2','joint3','joint4','joint5','joint6']
 		goal_msg    = FollowJointTrajectory.Goal()
-		goal_msg.goal_time_tolerance = Duration(seconds=1).to_msg() # goal_time_tolerance allows some freedom in time, so that the trajectory goal can still
+		goal_msg.goal_time_tolerance = Duration(seconds=0.5).to_msg() # goal_time_tolerance allows some freedom in time, so that the trajectory goal can still
 															        # succeed even if the joints reach the goal some time after the precise end time of the trajectory.
 															
 		goal_msg.trajectory.joint_names = joint_names
@@ -310,30 +312,31 @@ class MyRLEnvironmentNode(Node):
 			
 			if distance <= 0.05:
 				self.get_logger().info('Goal Reached')
-				done = True
 				reward_d = 10
+				self.goal = True
 			else:
-				done = False
 				reward_d = -1
+				self.goal = False
 
-			return reward_d, done
+			return reward_d
 
 
-	def state_space_funct (self):
+	def get_space(self):
 
 		# This function creates the state state vector and returns the current value of each variable
 		# i.e end-effector position, each joint value, target (sphere position) 
 
 		try:
+			reward  = self.calculate_reward_funct()
 			state = [
-					self.robot_x, self.robot_y, self.robot_z, 
-					self.joint_1_pos, self.joint_2_pos, self.joint_3_pos, self.joint_4_pos, self.joint_5_pos, self.joint_6_pos, 
-					self.pos_sphere_x, self.pos_sphere_y, self.pos_sphere_z
+					self.goal, 
+					self.joint_1_pos, self.joint_2_pos, self.joint_3_pos, self.joint_4_pos, self.joint_5_pos, self.joint_6_pos,
+					self.robot_x, self.robot_y, self.robot_z
 					]			 	
 		except:
 			
 			self.get_logger().info('-------node not ready yet, Still getting values------------------')
 			return 
 		else:
-			return state
+			return state, reward
 

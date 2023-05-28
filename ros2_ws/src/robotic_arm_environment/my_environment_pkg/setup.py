@@ -29,9 +29,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        
-                           'run_environment = my_environment_pkg.run_environment:main',
-                           'data_collection = my_environment_pkg.collection_data:main',
+                            'run_ddpg = my_environment_pkg.run_ddpg:main',
+                            'run_environment = my_environment_pkg.run_environment:main',
+                            'data_collection = my_environment_pkg.collection_data:main',
         ],
     },  
 )

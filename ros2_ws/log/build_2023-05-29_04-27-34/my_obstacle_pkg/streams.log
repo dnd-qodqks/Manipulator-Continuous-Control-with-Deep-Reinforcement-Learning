@@ -1,0 +1,16 @@
+[1.209s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg': CONDA_PROMPT_MODIFIER=(torch) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data
+[1.452s] running develop
+[1.625s] running egg_info
+[1.625s] writing my_obstacle_pkg.egg-info/PKG-INFO
+[1.625s] writing dependency_links to my_obstacle_pkg.egg-info/dependency_links.txt
+[1.626s] writing entry points to my_obstacle_pkg.egg-info/entry_points.txt
+[1.626s] writing requirements to my_obstacle_pkg.egg-info/requires.txt
+[1.626s] writing top-level names to my_obstacle_pkg.egg-info/top_level.txt
+[1.670s] reading manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[1.671s] writing manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[1.717s] running build_ext
+[1.717s] Creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages/my-obstacle-pkg.egg-link (link to .)
+[1.718s] 
+[1.718s] Installed /home/dndqodqks/ros2_ws/build/my_obstacle_pkg
+[1.718s] running install_data
+[1.760s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg' returned '0': CONDA_PROMPT_MODIFIER=(torch) PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data

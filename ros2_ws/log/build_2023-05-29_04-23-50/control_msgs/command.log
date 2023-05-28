@@ -1,0 +1,4 @@
+Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CONDA_PROMPT_MODIFIER=(torch) /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
+Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CONDA_PROMPT_MODIFIER=(torch) /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
+Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CONDA_PROMPT_MODIFIER=(torch) /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs
+Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CONDA_PROMPT_MODIFIER=(torch) /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs
