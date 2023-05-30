@@ -1,0 +1,16 @@
+[1.626s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data
+[1.940s] running develop
+[2.098s] running egg_info
+[2.098s] writing my_obstacle_pkg.egg-info/PKG-INFO
+[2.099s] writing dependency_links to my_obstacle_pkg.egg-info/dependency_links.txt
+[2.100s] writing entry points to my_obstacle_pkg.egg-info/entry_points.txt
+[2.101s] writing requirements to my_obstacle_pkg.egg-info/requires.txt
+[2.102s] writing top-level names to my_obstacle_pkg.egg-info/top_level.txt
+[2.147s] reading manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[2.151s] writing manifest file 'my_obstacle_pkg.egg-info/SOURCES.txt'
+[2.197s] running build_ext
+[2.197s] Creating /home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages/my-obstacle-pkg.egg-link (link to .)
+[2.198s] 
+[2.199s] Installed /home/dndqodqks/ros2_ws/build/my_obstacle_pkg
+[2.199s] running install_data
+[2.254s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data

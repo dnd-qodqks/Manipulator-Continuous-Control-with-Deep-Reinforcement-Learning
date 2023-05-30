@@ -1,0 +1,531 @@
+[0.304s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.304s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f10ec53f6d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f10ec53f6d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f10ec53fc10>)
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.342s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dndqodqks/ros2_ws'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'ros'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['cmake', 'python']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'cmake'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'python'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extensions ['python_setup_py']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment) by extension 'python_setup_py'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'colcon_meta'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['ros']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'ros'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['cmake', 'python']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'cmake'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'python'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extensions ['python_setup_py']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/RL_algorithms_basic) by extension 'python_setup_py'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'cmake'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'python'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extensions ['python_setup_py']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/data) by extension 'python_setup_py'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'ros'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['cmake', 'python']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/images) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_doosan_pkg) by extension 'ros'
+[0.364s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_environment/my_doosan_pkg' with type 'ros.ament_python' and name 'my_doosan_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extension 'colcon_pkg'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extensions ['colcon_meta']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extension 'colcon_meta'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extensions ['ros']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_environment_pkg) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_environment/my_environment_pkg' with type 'ros.ament_python' and name 'my_environment_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_obstacle_pkg) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_environment/my_obstacle_pkg' with type 'ros.ament_python' and name 'my_obstacle_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_arm_environment/my_sphere_pkg) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_arm_environment/my_sphere_pkg' with type 'ros.ament_python' and name 'my_sphere_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['colcon_pkg']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'colcon_pkg'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['colcon_meta']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'colcon_meta'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['ros']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'ros'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['cmake', 'python']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'cmake'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'python'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extensions ['python_setup_py']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls) by extension 'python_setup_py'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'ros'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['cmake', 'python']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'python'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extensions ['python_setup_py']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs) by extension 'python_setup_py'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/control_msgs/control_msgs) by extension 'ros'
+[0.369s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-controls/control_msgs/control_msgs' with type 'ros.ament_cmake' and name 'control_msgs'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extension 'ignore_ament_install'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extensions ['colcon_pkg']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-controls/realtime_tools) by extension 'ros'
+[0.371s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-controls/realtime_tools' with type 'ros.ament_cmake' and name 'realtime_tools'
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.395s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/dndqodqks/ros2_ws/install
+[0.397s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/foxy
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.459s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'control_msgs' is in: /home/dndqodqks/ros2_ws/install/control_msgs, /opt/ros/foxy
+	'realtime_tools' is in: /home/dndqodqks/ros2_ws/install/realtime_tools, /opt/ros/foxy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding control_msgs realtime_tools
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_args' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_target' from command line to 'None'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.461s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'control_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.462s] DEBUG:colcon.colcon_core.verb:Building package 'control_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/control_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/control_msgs', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_args' from command line to 'None'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_target' from command line to 'None'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'my_doosan_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.464s] DEBUG:colcon.colcon_core.verb:Building package 'my_doosan_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/my_doosan_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/my_doosan_pkg', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_doosan_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_target' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'my_environment_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.467s] DEBUG:colcon.colcon_core.verb:Building package 'my_environment_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/my_environment_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/my_environment_pkg', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_environment_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_target' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.469s] Level 5:colcon.colcon_core.verb:set package 'my_obstacle_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.469s] DEBUG:colcon.colcon_core.verb:Building package 'my_obstacle_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_obstacle_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_args' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_target' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'my_sphere_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.470s] DEBUG:colcon.colcon_core.verb:Building package 'my_sphere_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/my_sphere_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/my_sphere_pkg', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_sphere_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_target' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'realtime_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.472s] DEBUG:colcon.colcon_core.verb:Building package 'realtime_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dndqodqks/ros2_ws/build/realtime_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dndqodqks/ros2_ws/install/realtime_tools', 'merge_install': False, 'path': '/home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools', 'symlink_install': True, 'test_result_base': None}
+[0.473s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.478s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.478s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs' with build type 'ament_cmake'
+[0.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dndqodqks/ros2_ws/src/ros-controls/control_msgs/control_msgs'
+[0.483s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.490s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_doosan_pkg' with build type 'ament_python'
+[0.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_doosan_pkg', 'ament_prefix_path')
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/ament_prefix_path.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/ament_prefix_path.sh'
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.504s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_environment_pkg' with build type 'ament_python'
+[0.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_environment_pkg', 'ament_prefix_path')
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/ament_prefix_path.ps1'
+[0.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/ament_prefix_path.dsv'
+[0.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/ament_prefix_path.sh'
+[0.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.519s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_obstacle_pkg' with build type 'ament_python'
+[0.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_obstacle_pkg', 'ament_prefix_path')
+[0.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/ament_prefix_path.ps1'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/ament_prefix_path.dsv'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/ament_prefix_path.sh'
+[0.526s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.532s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_sphere_pkg' with build type 'ament_python'
+[0.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_sphere_pkg', 'ament_prefix_path')
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/ament_prefix_path.ps1'
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/ament_prefix_path.dsv'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/ament_prefix_path.sh'
+[0.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.538s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.545s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools' with build type 'ament_cmake'
+[0.545s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dndqodqks/ros2_ws/src/ros-controls/realtime_tools'
+[0.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
+[0.802s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_doosan_pkg'
+[0.806s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.806s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_environment_pkg'
+[1.033s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.033s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.245s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_obstacle_pkg'
+[1.248s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.248s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.458s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_sphere_pkg'
+[1.461s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+[1.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/control_msgs -- -j8 -l8
+[1.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --build /home/dndqodqks/ros2_ws/build/realtime_tools -- -j8 -l8
+[1.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/realtime_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools
+[1.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realtime_tools)
+[1.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/realtime_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/realtime_tools
+[1.970s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools' for CMake module files
+[1.970s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools' for CMake config files
+[1.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('realtime_tools', 'cmake_prefix_path')
+[1.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.ps1'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.dsv'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.sh'
+[1.977s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib'
+[1.977s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/bin'
+[1.977s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib/pkgconfig/realtime_tools.pc'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib/python3.8/site-packages'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/bin'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.ps1'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.dsv'
+[1.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.sh'
+[1.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.bash'
+[1.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.zsh'
+[1.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/realtime_tools/share/colcon-core/packages/realtime_tools)
+[2.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/control_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs
+[2.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build --no-deps install_data
+[2.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/my_doosan_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_doosan_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_doosan_pkg/build --no-deps install_data
+[2.133s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realtime_tools)
+[2.139s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools' for CMake module files
+[2.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[2.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data
+[2.145s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools' for CMake config files
+[2.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('realtime_tools', 'cmake_prefix_path')
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/hook/cmake_prefix_path.sh'
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib'
+[2.152s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/bin'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib/pkgconfig/realtime_tools.pc'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/lib/python3.8/site-packages'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/realtime_tools/bin'
+[2.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.ps1'
+[2.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.dsv'
+[2.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.sh'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.bash'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/realtime_tools/share/realtime_tools/package.zsh'
+[2.163s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/realtime_tools/share/colcon-core/packages/realtime_tools)
+[2.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_msgs)
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs' for CMake module files
+[2.233s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs' for CMake config files
+[2.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/control_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dndqodqks/ros2_ws/install/my_sphere_pkg:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg:/home/dndqodqks/ros2_ws/install/my_environment_pkg:/home/dndqodqks/ros2_ws/install/my_doosan_pkg:/opt/ros/foxy /home/dndqodqks/.local/bin/cmake --install /home/dndqodqks/ros2_ws/build/control_msgs
+[2.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'cmake_prefix_path')
+[2.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.ps1'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.sh'
+[2.241s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib'
+[2.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'ld_library_path_lib')
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.ps1'
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.dsv'
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.sh'
+[2.247s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/bin'
+[2.247s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib/pkgconfig/control_msgs.pc'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages'
+[2.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'pythonpath')
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.ps1'
+[2.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.dsv'
+[2.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.sh'
+[2.254s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/bin'
+[2.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.ps1'
+[2.259s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.dsv'
+[2.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.sh'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.bash'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.zsh'
+[2.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/control_msgs/share/colcon-core/packages/control_msgs)
+[2.693s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_msgs)
+[2.697s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs' for CMake module files
+[2.698s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs' for CMake config files
+[2.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'cmake_prefix_path')
+[2.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.ps1'
+[2.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.dsv'
+[2.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/cmake_prefix_path.sh'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib'
+[2.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'ld_library_path_lib')
+[2.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.ps1'
+[2.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.dsv'
+[2.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/ld_library_path_lib.sh'
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/bin'
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib/pkgconfig/control_msgs.pc'
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/lib/python3.8/site-packages'
+[2.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_msgs', 'pythonpath')
+[2.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.ps1'
+[2.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.dsv'
+[2.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/hook/pythonpath.sh'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/control_msgs/bin'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.ps1'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.dsv'
+[2.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.sh'
+[2.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.bash'
+[2.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/control_msgs/share/control_msgs/package.zsh'
+[2.718s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/control_msgs/share/colcon-core/packages/control_msgs)
+[2.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_sphere_pkg', 'pythonpath_develop')
+[2.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath_develop.ps1'
+[2.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/my_sphere_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_sphere_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_sphere_pkg/build --no-deps install_data
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/build/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath_develop.dsv'
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath_develop.sh'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg' for CMake module files
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg' for CMake config files
+[2.729s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib'
+[2.729s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/bin'
+[2.729s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/pkgconfig/my_sphere_pkg.pc'
+[2.729s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/lib/python3.8/site-packages'
+[2.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_sphere_pkg', 'pythonpath')
+[2.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath.ps1'
+[2.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath.dsv'
+[2.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/hook/pythonpath.sh'
+[2.733s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/bin'
+[2.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_sphere_pkg)
+[2.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/package.ps1'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/package.dsv'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/package.sh'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/package.bash'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/my_sphere_pkg/package.zsh'
+[2.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/my_sphere_pkg/share/colcon-core/packages/my_sphere_pkg)
+[2.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_doosan_pkg', 'pythonpath_develop')
+[2.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath_develop.ps1'
+[2.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/my_doosan_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_doosan_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_doosan_pkg/build --no-deps install_data
+[2.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/build/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath_develop.dsv'
+[2.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath_develop.sh'
+[2.746s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg' for CMake module files
+[2.746s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg' for CMake config files
+[2.747s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib'
+[2.747s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/bin'
+[2.747s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/pkgconfig/my_doosan_pkg.pc'
+[2.747s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/lib/python3.8/site-packages'
+[2.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_doosan_pkg', 'pythonpath')
+[2.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath.ps1'
+[2.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath.dsv'
+[2.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/hook/pythonpath.sh'
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/bin'
+[2.751s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_doosan_pkg)
+[2.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/package.ps1'
+[2.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/package.dsv'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/package.sh'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/package.bash'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/my_doosan_pkg/package.zsh'
+[2.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/my_doosan_pkg/share/colcon-core/packages/my_doosan_pkg)
+[2.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_environment_pkg', 'pythonpath_develop')
+[2.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_environment_pkg/share/my_environment_pkg/hook/pythonpath_develop.ps1'
+[2.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[2.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/build/my_environment_pkg/share/my_environment_pkg/hook/pythonpath_develop.dsv'
+[2.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_environment_pkg/share/my_environment_pkg/hook/pythonpath_develop.sh'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg' for CMake module files
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg' for CMake config files
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg/bin'
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/pkgconfig/my_environment_pkg.pc'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages'
+[2.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_environment_pkg', 'pythonpath')
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/pythonpath.ps1'
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/pythonpath.dsv'
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/hook/pythonpath.sh'
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_environment_pkg/bin'
+[2.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_environment_pkg)
+[2.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/package.ps1'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/package.dsv'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/package.sh'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/package.bash'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/package.zsh'
+[2.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/my_environment_pkg/share/colcon-core/packages/my_environment_pkg)
+[2.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_obstacle_pkg', 'pythonpath_develop')
+[2.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_obstacle_pkg/build --no-deps install_data
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath_develop.ps1'
+[2.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath_develop.dsv'
+[2.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/build/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath_develop.sh'
+[2.779s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg' for CMake module files
+[2.779s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg' for CMake config files
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib'
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/bin'
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/pkgconfig/my_obstacle_pkg.pc'
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/lib/python3.8/site-packages'
+[2.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_obstacle_pkg', 'pythonpath')
+[2.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath.ps1'
+[2.784s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath.dsv'
+[2.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/hook/pythonpath.sh'
+[2.784s] Level 1:colcon.colcon_core.environment:checking '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/bin'
+[2.784s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_obstacle_pkg)
+[2.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/package.ps1'
+[2.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/package.dsv'
+[2.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/package.sh'
+[2.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/package.bash'
+[2.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/my_obstacle_pkg/package.zsh'
+[2.789s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dndqodqks/ros2_ws/install/my_obstacle_pkg/share/colcon-core/packages/my_obstacle_pkg)
+[2.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.790s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.790s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.795s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.795s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.795s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.805s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dndqodqks/ros2_ws/install/local_setup.ps1'
+[2.809s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dndqodqks/ros2_ws/install/_local_setup_util_ps1.py'
+[2.810s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dndqodqks/ros2_ws/install/setup.ps1'
+[2.812s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dndqodqks/ros2_ws/install/local_setup.sh'
+[2.813s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dndqodqks/ros2_ws/install/_local_setup_util_sh.py'
+[2.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dndqodqks/ros2_ws/install/setup.sh'
+[2.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dndqodqks/ros2_ws/install/local_setup.bash'
+[2.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dndqodqks/ros2_ws/install/setup.bash'
+[2.819s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dndqodqks/ros2_ws/install/local_setup.zsh'
+[2.820s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dndqodqks/ros2_ws/install/setup.zsh'

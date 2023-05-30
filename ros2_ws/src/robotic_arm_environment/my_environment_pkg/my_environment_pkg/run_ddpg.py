@@ -14,7 +14,7 @@ def main(args=None):
     env = MyRLEnvironmentNode()
     rclpy.spin_once(env)
     
-    agent = Agent(env)
+    agent = Agent(is_training=True)
     
     EPISODE = 500
     EPISODE_STEP = 50
@@ -36,7 +36,7 @@ def main(args=None):
         
         for step in range(EPISODE_STEP):
             print (f'----------------Episode:{episode+1} Step:{step+1}--------------------')
-            action = agent.get_action()
+            action = agent.get_action(state)
             env.action_step_service(action)
             new_state, reward  = env.get_space()
 

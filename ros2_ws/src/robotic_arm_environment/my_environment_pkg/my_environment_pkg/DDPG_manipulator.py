@@ -18,9 +18,13 @@ class Actor(nn.Module):
         
         super(Actor, self).__init__()
         
-        self.fc_1 = nn.Linear(state_size, hidden_size)
-        self.fc_2 = nn.Linear(hidden_size, int(hidden_size / 2))
-        self.fc_3 = nn.Linear(int(hidden_size / 2), action_size)
+        # print(f"state_size({type(state_size)}): {state_size}")
+        # print(f"hidden_size({type(hidden_size)}): {hidden_size}")
+        # print(f"action_size({type(action_size)}): {action_size}")
+        
+        self.fc_1 = nn.Linear(in_features=state_size, out_features=hidden_size)
+        self.fc_2 = nn.Linear(in_features=hidden_size, out_features=int(hidden_size / 2))
+        self.fc_3 = nn.Linear(in_features=int(hidden_size / 2), out_features=action_size)
         
         for m in self.modules():
             if isinstance(m, nn.Linear):
@@ -157,9 +161,10 @@ class Agent():
         self.critic_optimizer = optim.AdamW(self.critic.parameters(), lr=critic_learning_rate)
         
         if is_training is True:
-            self.noise = OU_Noise()
+            self.noise = OU_Noise(action_dim=self.action_size)
 
     def get_action(self, state):
+        state = np.array(state)
         state_change = torch.from_numpy(state).float().unsqueeze(0)
         
         action = self.actor.forward(state_change)
