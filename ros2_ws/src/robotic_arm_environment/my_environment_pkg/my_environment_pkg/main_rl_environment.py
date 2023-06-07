@@ -232,7 +232,7 @@ class MyRLEnvironmentNode(Node):
 		
 		# Every time this function is called, it passes the action vector (desire position of each joint) 
 		# to the action-client to execute the trajectory
-		
+  
 		points = []
 
 		point_msg = JointTrajectoryPoint()

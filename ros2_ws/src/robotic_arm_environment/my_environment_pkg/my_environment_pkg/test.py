@@ -4,7 +4,7 @@ import datetime
 
 total_start_time = time.time()
 total_end_time = time.time()
-total_sec = total_start_time - total_end_time
+total_sec = total_end_time - total_start_time
 total_time = str(datetime.timedelta(seconds=total_sec)).split(".")[0]
 print("Total num of episode completed, Exiting ....")
 print("Total Time:", total_time)

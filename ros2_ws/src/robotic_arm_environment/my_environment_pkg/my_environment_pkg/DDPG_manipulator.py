@@ -18,10 +18,6 @@ class Actor(nn.Module):
         
         super(Actor, self).__init__()
         
-        # print(f"state_size({type(state_size)}): {state_size}")
-        # print(f"hidden_size({type(hidden_size)}): {hidden_size}")
-        # print(f"action_size({type(action_size)}): {action_size}")
-        
         self.fc_1 = nn.Linear(in_features=state_size, out_features=hidden_size)
         self.fc_2 = nn.Linear(in_features=hidden_size, out_features=int(hidden_size / 2))
         self.fc_3 = nn.Linear(in_features=int(hidden_size / 2), out_features=action_size)
@@ -40,7 +36,7 @@ class Actor(nn.Module):
 class Critic(nn.Module):
     def __init__(
         self, 
-        state_size, 
+        state_size,
         hidden_size, 
         action_size
         ) -> None:
@@ -59,7 +55,7 @@ class Critic(nn.Module):
         
     def forward(self, state, action):
         x_s = F.relu(self.state_fc_1(state))
-        x_s = F.relu(self.state_fc_1(x_s))
+        x_s = F.relu(self.state_fc_2(x_s))
         
         x_a = F.relu(self.action_fc_1(action))
         
@@ -133,19 +129,20 @@ class Agent():
         is_training=False
         ):
         
-        self.state_size = 22 # goal(Success(1) or failure(0)) + Coordinate at the end of each link (18) + Euclidean distance from target point to end-effector (3)
+        self.state_size = 10 # goal(Success(1) or failure(0)) + Coordinate at the end of each link (18) + Euclidean distance from target point to end-effector (3)
         self.action_size = 6 # Changes in the angles of each joint and their current angles
 
         self.gamma = gamma
         self.tau = tau
         self.t_step = 0  # counter for activating learning every few steps
-
+        self.is_training = is_training
+        
         # Initialization of the networks
         self.actor  = Actor(self.state_size, hidden_size, self.action_size)  # main network Actor
-        self.critic = Critic(self.state_size + self.action_size, hidden_size, self.action_size)  # main network Critic
+        self.critic = Critic(self.state_size, hidden_size, self.action_size)  # main network Critic
 
         self.actor_target = Actor(self.state_size, hidden_size, self.action_size)
-        self.critic_target = Critic(self.state_size + self.action_size, hidden_size, self.action_size)
+        self.critic_target = Critic(self.state_size, hidden_size, self.action_size)
 
         # Initialization of the target networks as copies of the original networks
         for target_param, param in zip(self.actor_target.parameters(), self.actor.parameters()):
@@ -160,12 +157,12 @@ class Agent():
         self.actor_optimizer  = optim.AdamW(self.actor.parameters(), lr=actor_learning_rate)
         self.critic_optimizer = optim.AdamW(self.critic.parameters(), lr=critic_learning_rate)
         
-        if is_training is True:
+        if self.is_training is True:
             self.noise = OU_Noise(action_dim=self.action_size)
 
     def get_action(self, state):
         state = np.array(state)
-        state_change = torch.from_numpy(state).float().unsqueeze(0)
+        state_change = torch.from_numpy(state).float()
         
         action = self.actor.forward(state_change)
         
@@ -176,15 +173,17 @@ class Agent():
         action = action.detach()
         action = action.numpy()
         
-        return action
+        float_action = []
+        for float64_action in action:
+            float_action.append(float64_action.item())
+        
+        return float_action
     
     def step_training(self, batch_size):
-        LEARN_EVERY_STEP = 100
         self.t_step = self.t_step + 1
         
-        if self.t_step % LEARN_EVERY_STEP == 0:
-            if self.memory.__len__() > batch_size:
-                self.learn_step(batch_size)
+        if self.memory.__len__() > batch_size:
+            self.learn_step(batch_size)
     
     def learn_step(self, batch_size):
         state, action, reward, next_state = self.memory.sample(batch_size)
@@ -201,7 +200,7 @@ class Agent():
         
         Q_value = self.critic.forward(state, action)
         next_action = self.actor_target.forward(next_state)
-        next_Q_value = self.critic_target.forward(next_state, next_action.detch())
+        next_Q_value = self.critic_target.forward(next_state, next_action)
         target_Q_value = reward + self.gamma * next_Q_value
         
         loss = nn.MSELoss()

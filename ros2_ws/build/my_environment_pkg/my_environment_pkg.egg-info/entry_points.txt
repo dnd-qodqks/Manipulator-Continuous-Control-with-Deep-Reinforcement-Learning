@@ -1,5 +1,5 @@
 [console_scripts]
 data_collection = my_environment_pkg.collection_data:main
-run_ddpg = my_environment_pkg.run_ddpg:main
 run_environment = my_environment_pkg.run_environment:main
+train_ddpg = my_environment_pkg.train_ddpg:main
 

@@ -1,0 +1,19 @@
+[1.564s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[1.855s] running develop
+[2.051s] running egg_info
+[2.051s] writing my_environment_pkg.egg-info/PKG-INFO
+[2.051s] writing dependency_links to my_environment_pkg.egg-info/dependency_links.txt
+[2.051s] writing entry points to my_environment_pkg.egg-info/entry_points.txt
+[2.051s] writing requirements to my_environment_pkg.egg-info/requires.txt
+[2.051s] writing top-level names to my_environment_pkg.egg-info/top_level.txt
+[2.082s] reading manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[2.083s] writing manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[2.114s] running build_ext
+[2.115s] Creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my-environment-pkg.egg-link (link to .)
+[2.115s] Installing data_collection script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.115s] Installing run_ddpg script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.116s] Installing run_environment script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.116s] 
+[2.116s] Installed /home/dndqodqks/ros2_ws/build/my_environment_pkg
+[2.116s] running install_data
+[2.140s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
