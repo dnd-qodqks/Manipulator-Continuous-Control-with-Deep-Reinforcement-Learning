@@ -33,8 +33,8 @@ def generate_launch_description():
 
 	my_doosan_robot_files = get_package_share_directory('my_doosan_pkg')
 	my_sphere_files       = get_package_share_directory('my_sphere_pkg')
-	my_obstacle_files	  = get_package_share_directory('my_obstacle_pkg')
-	my_environmets_files  = get_package_share_directory('my_environment_pkg')
+	# my_obstacle_files	  = get_package_share_directory('my_obstacle_pkg')
+	# my_environmets_files  = get_package_share_directory('my_environment_pkg')
 
 	# Start doosan robot and controller
 	doosan_robot = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_doosan_robot_files + '/launch/my_doosan_controller.launch.py')) 
@@ -42,8 +42,8 @@ def generate_launch_description():
 	# Start sphere mark
 	sphere_mark  = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_sphere_files + '/launch/my_sphere.launch.py')) 
 
-	# Start obstacle object
-	obstacle_object = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_obstacle_files + '/launch/my_obstacle.launch.py')) 
+	# # Start obstacle object
+	# obstacle_object = IncludeLaunchDescription(PythonLaunchDescriptionSource(my_obstacle_files + '/launch/my_obstacle.launch.py')) 
  
 	'''
 	# Start Rviz
@@ -68,7 +68,7 @@ def generate_launch_description():
 
 	ld.add_action(doosan_robot)
 	ld.add_action(sphere_mark)
-	ld.add_action(obstacle_object)
+	# ld.add_action(obstacle_object)
 	ld.add_action(gazebo_node)
 	#ld.add_action (rviz_node)
 

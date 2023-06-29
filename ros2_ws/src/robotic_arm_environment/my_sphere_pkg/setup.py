@@ -28,6 +28,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [ 'reader_mark_node = my_sphere_pkg.coordinate_node:main',
+                             'reader_one_mark_node = my_sphere_pkg.one_coordinate_node:main',
                              'my_client_node   = my_sphere_pkg.client_node:main',
         ],
     },

@@ -65,8 +65,10 @@ class MyRLEnvironmentNode(Node):
 
 		print ("initializing.....")
 		
-		self.goal = False
-
+		self.goal_0 = False
+		self.goal_1 = False
+		self.goal_2 = False
+  
 		# end-effector transformation
 		self.tf_buffer   = tf2_ros.Buffer()
 		self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
@@ -119,10 +121,20 @@ class MyRLEnvironmentNode(Node):
 		self.joint_6_vel =  joint_state_msg.velocity[5]
 
 		# Determine the sphere position in Gazebo wrt world frame
-		sphere_index = target_point_msg.name.index('my_sphere') # Get the corret index for the sphere
-		self.pos_sphere_x = target_point_msg.pose[sphere_index].position.x 
-		self.pos_sphere_y = target_point_msg.pose[sphere_index].position.y 
-		self.pos_sphere_z = target_point_msg.pose[sphere_index].position.z 
+		sphere_index = target_point_msg.name.index('my_sphere_0') # Get the corret index for the sphere
+		self.pos_sphere_0_x = target_point_msg.pose[sphere_index].position.x 
+		self.pos_sphere_0_y = target_point_msg.pose[sphere_index].position.y 
+		self.pos_sphere_0_z = target_point_msg.pose[sphere_index].position.z
+
+		# sphere_index = target_point_msg.name.index('my_sphere_1') # Get the corret index for the sphere
+		# self.pos_sphere_1_x = target_point_msg.pose[sphere_index].position.x 
+		# self.pos_sphere_1_y = target_point_msg.pose[sphere_index].position.y 
+		# self.pos_sphere_1_z = target_point_msg.pose[sphere_index].position.z
+
+		# sphere_index = target_point_msg.name.index('my_sphere_2') # Get the corret index for the sphere
+		# self.pos_sphere_2_x = target_point_msg.pose[sphere_index].position.x 
+		# self.pos_sphere_2_y = target_point_msg.pose[sphere_index].position.y 
+		# self.pos_sphere_2_z = target_point_msg.pose[sphere_index].position.z
 
 		# Determine the pose(position and location) of the end-effector w.r.t. world frame
 		self.robot_x, self.robot_y, self.robot_z = self.get_end_effector_transformation()
@@ -169,11 +181,15 @@ class MyRLEnvironmentNode(Node):
 		# -------------------- reset sphere position------------------#
 
 		# For now the sphere's position will be inside a 1x1x1 workspace in front of the robot 
-		sphere_position_x = random.uniform( 0.05, 1.05)
-		sphere_position_y = random.uniform( -0.5, 0.5)
-		sphere_position_z = random.uniform( 0.05, 1.05)
+		# sphere_position_x = random.uniform( 0.05, 1.05)
+		# sphere_position_y = random.uniform( -0.5, 0.5)
+		# sphere_position_z = random.uniform( 0.05, 1.05)
+  
+		sphere_position_x = 0.5
+		sphere_position_y = 0.5
+		sphere_position_z = 1.0
 
-		self.request_sphere_reset.state.name = 'my_sphere'
+		self.request_sphere_reset.state.name = 'my_sphere_0'
 		self.request_sphere_reset.state.reference_frame = 'world'
 		self.request_sphere_reset.state.pose.position.x = sphere_position_x
 		self.request_sphere_reset.state.pose.position.y = sphere_position_y
@@ -203,7 +219,7 @@ class MyRLEnvironmentNode(Node):
 
 		joint_names   = ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
 		home_goal_msg = FollowJointTrajectory.Goal()
-		home_goal_msg.goal_time_tolerance    = Duration(seconds=0.5).to_msg()
+		home_goal_msg.goal_time_tolerance    = Duration(seconds=1.0).to_msg()
 		home_goal_msg.trajectory.joint_names = joint_names
 		home_goal_msg.trajectory.points      = [home_point_msg]
 		
@@ -228,7 +244,7 @@ class MyRLEnvironmentNode(Node):
 			self.get_logger().info('There was a problem with the action')
 
 
-	def action_step_service(self, action_values):
+	def action_step_service(self, action_values, second=0.5):
 		
 		# Every time this function is called, it passes the action vector (desire position of each joint) 
 		# to the action-client to execute the trajectory
@@ -239,41 +255,41 @@ class MyRLEnvironmentNode(Node):
 		point_msg.positions     = action_values
 		point_msg.velocities    = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 		point_msg.accelerations = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-		point_msg.time_from_start = Duration(seconds=1.0).to_msg() # be careful about this time 
+		point_msg.time_from_start = Duration(seconds=second*2).to_msg() # be careful about this time 
 		points.append(point_msg) 
 
 		joint_names = ['joint1','joint2','joint3','joint4','joint5','joint6']
 		goal_msg    = FollowJointTrajectory.Goal()
-		goal_msg.goal_time_tolerance = Duration(seconds=0.5).to_msg() # goal_time_tolerance allows some freedom in time, so that the trajectory goal can still
+		goal_msg.goal_time_tolerance = Duration(seconds=second).to_msg() # goal_time_tolerance allows some freedom in time, so that the trajectory goal can still
 															        # succeed even if the joints reach the goal some time after the precise end time of the trajectory.
 															
 		goal_msg.trajectory.joint_names = joint_names
 		goal_msg.trajectory.points      = points
 
-		self.get_logger().info('Waiting for action server to move the robot...')
+		# self.get_logger().info('Waiting for action server to move the robot...')
 		self.trajectory_action_client.wait_for_server() # waits for the action server to be available
 
-		self.get_logger().info('Sending goal-action request...')
+		# self.get_logger().info('Sending goal-action request...')
 		self.send_goal_future = self.trajectory_action_client.send_goal_async(goal_msg) 
 
-		self.get_logger().info('Checking if the goal is accepted...')
+		# self.get_logger().info('Checking if the goal is accepted...')
 		rclpy.spin_until_future_complete(self, self.send_goal_future ) # Wait for goal status
 
 		goal_handle = self.send_goal_future.result()
 
 		if not goal_handle.accepted:
-			self.get_logger().info(' Action-Goal rejected ')
+			# self.get_logger().info(' Action-Goal rejected ')
 			return
-		self.get_logger().info('Action-Goal accepted')
+		# self.get_logger().info('Action-Goal accepted')
 
-		self.get_logger().info('Checking the response from action-service...')
+		# self.get_logger().info('Checking the response from action-service...')
 		self.get_result = goal_handle.get_result_async()
 		rclpy.spin_until_future_complete(self, self.get_result ) # Wait for response
 
-		if self.get_result.result().result.error_code == 0:
-			self.get_logger().info('Action Completed without problem')
-		else:
-			self.get_logger().info('There was a problem with the accion')
+		# if self.get_result.result().result.error_code == 0:
+		# 	self.get_logger().info('Action Completed without problem')
+		# else:
+		# 	self.get_logger().info('There was a problem with the accion')
 
 
 	def generate_action_funct(self):
@@ -282,54 +298,79 @@ class MyRLEnvironmentNode(Node):
 		# This function generates random values in radians for each joint
 		# These values range were tested in advance to make sure that there were not internal collisions 
 
-		angle_j_1 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180]
-		angle_j_2 = random.uniform( -0.57595, 0.57595)	 # values in degrees [  -33,  33]
-		angle_j_3 = random.uniform( -2.51327, 2.51327)   # values in degrees [ -144, 144]
-		angle_j_4 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180]
-		angle_j_5 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180]
-		angle_j_6 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180]
+		angle_j_1 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180] 360
+		angle_j_2 = random.uniform( -0.57595, 0.57595)	 # values in degrees [  -33,  33] 66
+		angle_j_3 = random.uniform( -2.51327, 2.51327)   # values in degrees [ -144, 144] 288
+		angle_j_4 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180] 360
+		angle_j_5 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180] 360
+		angle_j_6 = random.uniform( -3.14159, 3.14159)   # values in degrees [ -180, 180] 360
 
 		return [angle_j_1, angle_j_2, angle_j_3, angle_j_4, angle_j_5, angle_j_6]
 
 
-	def calculate_reward_funct(self):
-
-		# I aim with this function to get the reward value. For now, the reward is based on the distance
-		# i.e. Calculate the euclidean distance between the link6 (end effector) and sphere (target point)
-		# and each timestep the robot receives -1 but if it reaches the goal (distance < 0.05) receives +10
-
-
+	def calculate_reward_funct(self, step=0):
 		try:
 			robot_end_position    = np.array((self.robot_x, self.robot_y, self.robot_z))
-			target_point_position = np.array((self.pos_sphere_x, self.pos_sphere_y, self.pos_sphere_z))
+			target_point_position_0 = np.array((self.pos_sphere_0_x, self.pos_sphere_0_y, self.pos_sphere_0_z))
+			# target_point_position_1 = np.array((self.pos_sphere_1_x, self.pos_sphere_1_y, self.pos_sphere_1_z))
+			# target_point_position_2 = np.array((self.pos_sphere_2_x, self.pos_sphere_2_y, self.pos_sphere_2_z))
 			
+			reward_0 = 0
+			reward_1 = 0
+			reward_2 = 0
+   
 		except: 
 			self.get_logger().info('could not calculate the distance yet, trying again...')
 			return
 
 		else:
-			distance = np.linalg.norm(robot_end_position - target_point_position)
-			
-			if distance <= 0.05:
+			distance_0 = np.linalg.norm(robot_end_position - target_point_position_0)
+			# distance_1 = np.linalg.norm(robot_end_position - target_point_position_1)
+			# distance_2 = np.linalg.norm(robot_end_position - target_point_position_2)
+
+			# reward_0 = - distance_0 / 20 - distance_1 / 20 - distance_2 / 20
+
+			# reward_d = - 10 * (distance_0**np.e)
+			# print(reward_d)
+   
+			reward_d = - distance_0 / 5
+			# if reward_d < -10: reward_d = -10
+
+			if distance_0 < 0.05 and step > 3:
 				self.get_logger().info('Goal Reached')
-				reward_d = 10
-				self.goal = True
+				self.goal_0 = True
 			else:
-				reward_d = -1
-				self.goal = False
+				self.goal_0 = False
+    
+			# if distance_1 < 0.05 and step > 3:
+			# 	self.get_logger().info('Goal Reached')
+			# 	self.goal_1 = True
+			# else:
+			# 	self.goal_1 = False
 
-			return reward_d
+			# if distance_2 < 0.05 and step > 3:
+			# 	self.get_logger().info('Goal Reached')
+			# 	self.goal_2 = True
+			# else:
+			# 	self.goal_2 = False
 
+			if self.goal_0 is True: reward_0 = 20
+			if self.goal_0 is True: reward_1 = 5
+			if self.goal_0 is True: reward_2 = 5
+   
+			# return reward_d + reward_0 + reward_1 + reward_2
+			return reward_d + reward_0
 
-	def get_space(self):
+	def get_space(self, step=0):
 
 		# This function creates the state state vector and returns the current value of each variable
 		# i.e end-effector position, each joint value, target (sphere position) 
 
 		try:
-			reward  = self.calculate_reward_funct()
+			reward  = self.calculate_reward_funct(step)
+			
 			state = [
-					self.goal, 
+					self.goal_0, # self.goal_1, self.goal_2,
 					self.joint_1_pos, self.joint_2_pos, self.joint_3_pos, self.joint_4_pos, self.joint_5_pos, self.joint_6_pos,
 					self.robot_x, self.robot_y, self.robot_z
 					]			 	

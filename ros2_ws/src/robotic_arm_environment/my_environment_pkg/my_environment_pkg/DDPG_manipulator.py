@@ -13,10 +13,13 @@ class Actor(nn.Module):
         self, 
         state_size, 
         hidden_size, 
-        action_size
+        action_size,
+        device
         ) -> None:
         
         super(Actor, self).__init__()
+        
+        self.device = device
         
         self.fc_1 = nn.Linear(in_features=state_size, out_features=hidden_size)
         self.fc_2 = nn.Linear(in_features=hidden_size, out_features=int(hidden_size / 2))
@@ -38,10 +41,13 @@ class Critic(nn.Module):
         self, 
         state_size,
         hidden_size, 
-        action_size
+        action_size,
+        device
         ) -> None:
         
         super(Critic, self).__init__()
+        
+        self.device = device
         
         self.state_fc_1 = nn.Linear(state_size, hidden_size)
         self.state_fc_2 = nn.Linear(hidden_size, int(hidden_size / 2))
@@ -122,11 +128,15 @@ class Agent():
         self,
         hidden_size=256, 
         actor_learning_rate=1e-4, 
-        critic_learning_rate=1e-3,
+        critic_learning_rate=1e-4,
         gamma=0.99, 
-        tau=1e-2, 
+        tau=0.9999,
+        tau_actor=9e-4,
+        tau_critic=1e-4,
         max_memory_size=50000,
-        is_training=False
+        ou_noise=False,
+        n_learn=16,
+        device='cpu'
         ):
         
         self.state_size = 10 # goal(Success(1) or failure(0)) + Coordinate at the end of each link (18) + Euclidean distance from target point to end-effector (3)
@@ -134,16 +144,38 @@ class Agent():
 
         self.gamma = gamma
         self.tau = tau
+        self.tau_actor = tau_actor
+        self.tau_critic = tau_critic
         self.t_step = 0  # counter for activating learning every few steps
-        self.is_training = is_training
+        self.ou_noise = ou_noise
+        self.n_learn = n_learn
+        self.device = device
+        
+        if self.device == 'cuda':
+            self.gamma = torch.FloatTensor([gamma]).to(self.device)
+            self.tau = torch.FloatTensor([tau]).to(self.device)
+            self.tau_actor = torch.FloatTensor([tau_actor]).to(self.device)
+            self.tau_critic = torch.FloatTensor([tau_critic]).to(self.device)
+        
+        print(f"[device: {self.device}]")
         
         # Initialization of the networks
-        self.actor  = Actor(self.state_size, hidden_size, self.action_size)  # main network Actor
-        self.critic = Critic(self.state_size, hidden_size, self.action_size)  # main network Critic
+        self.actor  = Actor(self.state_size, hidden_size, self.action_size, self.device)   # main network Actor
+        self.critic = Critic(self.state_size, hidden_size, self.action_size, self.device)  # main network Critic
 
-        self.actor_target = Actor(self.state_size, hidden_size, self.action_size)
-        self.critic_target = Critic(self.state_size, hidden_size, self.action_size)
+        self.actor_target = Actor(self.state_size, hidden_size, self.action_size, self.device)
+        self.critic_target = Critic(self.state_size, hidden_size, self.action_size, self.device)
 
+        self.actor = self.actor.to(self.device)
+        self.critic = self.critic.to(self.device)
+        self.actor_target = self.actor_target.to(self.device)
+        self.critic_target = self.critic_target.to(self.device)
+        
+        # print("actor:", self.actor.is_cuda())
+        # print("critic:", self.critic.is_cuda())
+        # print("actor_target:", self.actor_target.is_cuda())
+        # print("critic_target:", self.critic_target.is_cuda())
+        
         # Initialization of the target networks as copies of the original networks
         for target_param, param in zip(self.actor_target.parameters(), self.actor.parameters()):
             target_param.data.copy_(param.data)
@@ -157,21 +189,26 @@ class Agent():
         self.actor_optimizer  = optim.AdamW(self.actor.parameters(), lr=actor_learning_rate)
         self.critic_optimizer = optim.AdamW(self.critic.parameters(), lr=critic_learning_rate)
         
-        if self.is_training is True:
+        if self.ou_noise is True:
             self.noise = OU_Noise(action_dim=self.action_size)
 
+    def load_weights(self, actor_path=None, critic_path=None):
+        if actor_path is None or critic_path is None: return
+        
+        self.actor.load_state_dict(torch.load(actor_path))
+        self.critic.load_state_dict(torch.load(critic_path))
+    
     def get_action(self, state):
         state = np.array(state)
-        state_change = torch.from_numpy(state).float()
+        state_change = torch.from_numpy(state).float().to(self.device)
         
         action = self.actor.forward(state_change)
         
-        if self.is_training is True:
-            noise = torch.from_numpy(copy.deepcopy(self.noise.get_noise(self.t_step)))
-            action = torch.clamp(torch.add(action, noise), -3.14159, 3.14159)
+        if self.ou_noise is True:
+            noise = torch.from_numpy(copy.deepcopy(self.noise.get_noise(self.t_step))).to(self.device)
+            action = torch.clamp(torch.add(action, noise), -3.14159, 3.14159).to(self.device)
             
-        action = action.detach()
-        action = action.numpy()
+        action = action.detach().cpu().numpy()
         
         float_action = []
         for float64_action in action:
@@ -183,7 +220,15 @@ class Agent():
         self.t_step = self.t_step + 1
         
         if self.memory.__len__() > batch_size:
-            self.learn_step(batch_size)
+            for _ in range(self.n_learn):
+                self.learn_step(batch_size)
+            
+            if self.device == 'cuda':
+                return self.actor_loss.detach().cpu().numpy(), self.critic_loss.detach().cpu().numpy()
+            else:
+                return self.actor_loss.detach().numpy(), self.critic_loss.detach().numpy()
+        
+        return None, None
     
     def learn_step(self, batch_size):
         state, action, reward, next_state = self.memory.sample(batch_size)
@@ -193,10 +238,10 @@ class Agent():
         reward = np.array(reward)
         next_state = np.array(next_state)
         
-        state  = torch.FloatTensor(state)
-        action = torch.FloatTensor(action)
-        reward = torch.FloatTensor(reward)
-        next_state = torch.FloatTensor(next_state)
+        state  = torch.FloatTensor(state).to(self.device)
+        action = torch.FloatTensor(action).to(self.device)
+        reward = torch.FloatTensor(reward).to(self.device)
+        next_state = torch.FloatTensor(next_state).to(self.device)
         
         Q_value = self.critic.forward(state, action)
         next_action = self.actor_target.forward(next_state)
@@ -204,20 +249,23 @@ class Agent():
         target_Q_value = reward + self.gamma * next_Q_value
         
         loss = nn.MSELoss()
-        critic_loss = loss(Q_value, target_Q_value)
-        actor_loss = - self.critic.forward(state, self.actor.forward(state)).mean()
+        self.critic_loss = loss(Q_value, target_Q_value)
+        self.actor_loss = - self.critic.forward(state, self.actor.forward(state)).mean()
         
-        self.actor_optimizer.zero_grad()
-        actor_loss.backward()
+        self.actor.zero_grad()
+        self.actor_loss.backward()
         self.actor_optimizer.step()
         
-        self.critic_optimizer.zero_grad()
-        critic_loss.backward()
+        self.critic.zero_grad()
+        self.critic_loss.backward()
         self.critic_optimizer.step()
         
         for target_param, param in zip(self.actor_target.parameters(), self.actor.parameters()):
-            target_param.data.copy_(param.data * self.tau + target_param.data * (1.0 - self.tau))
+            target_param.data.copy_(param.data * self.tau_actor + target_param.data * (1.0 - self.tau))
 
         for target_param, param in zip(self.critic_target.parameters(), self.critic.parameters()):
-            target_param.data.copy_(param.data * self.tau + target_param.data * (1.0 - self.tau))
+            target_param.data.copy_(param.data * self.tau_critic + target_param.data * (1.0 - self.tau))
 
+    def save_model(self, save_path):
+        torch.save(self.actor.state_dict(), f"{save_path}/actor.pt")
+        torch.save(self.critic.state_dict(), f"{save_path}/critic.pt")

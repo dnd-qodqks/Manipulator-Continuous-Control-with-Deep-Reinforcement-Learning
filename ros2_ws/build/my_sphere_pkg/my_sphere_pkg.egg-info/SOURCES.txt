@@ -8,6 +8,7 @@ models/urdf/sphere.urdf
 my_sphere_pkg/__init__.py
 my_sphere_pkg/client_node.py
 my_sphere_pkg/coordinate_node.py
+my_sphere_pkg/one_coordinate_node.py
 my_sphere_pkg.egg-info/PKG-INFO
 my_sphere_pkg.egg-info/SOURCES.txt
 my_sphere_pkg.egg-info/dependency_links.txt

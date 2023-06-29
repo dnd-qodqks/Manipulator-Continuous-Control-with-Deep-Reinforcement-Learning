@@ -1,0 +1,20 @@
+[1.724s] Invoking command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data
+[2.003s] running develop
+[2.172s] running egg_info
+[2.173s] writing my_environment_pkg.egg-info/PKG-INFO
+[2.173s] writing dependency_links to my_environment_pkg.egg-info/dependency_links.txt
+[2.173s] writing entry points to my_environment_pkg.egg-info/entry_points.txt
+[2.173s] writing requirements to my_environment_pkg.egg-info/requires.txt
+[2.174s] writing top-level names to my_environment_pkg.egg-info/top_level.txt
+[2.205s] reading manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[2.206s] writing manifest file 'my_environment_pkg.egg-info/SOURCES.txt'
+[2.239s] running build_ext
+[2.239s] Creating /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my-environment-pkg.egg-link (link to .)
+[2.240s] Installing data_collection script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.240s] Installing run_ddpg script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.240s] Installing run_environment script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.241s] Installing train_ddpg script to /home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[2.241s] 
+[2.241s] Installed /home/dndqodqks/ros2_ws/build/my_environment_pkg
+[2.241s] running install_data
+[2.283s] Invoked command in '/home/dndqodqks/ros2_ws/build/my_environment_pkg' returned '0': PYTHONPATH=/home/dndqodqks/ros2_ws/build/my_environment_pkg/prefix_override:/home/dndqodqks/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dndqodqks/ros2_ws/build/my_environment_pkg/build --no-deps install_data

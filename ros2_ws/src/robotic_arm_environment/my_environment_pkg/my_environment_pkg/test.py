@@ -1,22 +1,43 @@
 import matplotlib.pyplot as plt
-import time
-import datetime
+import numpy as np
 
-total_start_time = time.time()
-total_end_time = time.time()
-total_sec = total_end_time - total_start_time
-total_time = str(datetime.timedelta(seconds=total_sec)).split(".")[0]
-print("Total num of episode completed, Exiting ....")
-print("Total Time:", total_time)
+save_dir = "/home/dndqodqks/ros2_ws/src/robotic_arm_environment/my_environment_pkg"
 
-now = datetime.datetime.now()
+avg_rewards = np.loadtxt(save_dir+"/data/reward.txt", delimiter=' ')
+avg_actor_loss = np.loadtxt(save_dir+"/data/actor_loss.txt", delimiter=' ')
+avg_critic_loss = np.loadtxt(save_dir+"/data/critic_loss.txt", delimiter=' ')
 
-episode = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-rewards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-avg_rewards = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-plt.plot(episode, rewards, label='reward')
-plt.plot(episode, avg_rewards, label='avg_reward')
+plt.figure(figsize=(15, 10))
+    
+plt.subplot(2, 2, 1)
+plt.grid(True)
+plt.plot(range(len(avg_rewards)), avg_rewards, label='avg_reward')
 plt.xlabel('Episode')
 plt.ylabel('Reward')
 plt.legend()
-plt.savefig(f'../image/reward_{now.year}_{now.month}_{now.day}_{now.hour}_{now.minute}_{now.second}.png', dpi=200, facecolor='#eeeeee', bbox_inches='tight')
+
+plt.subplot(2, 2, 2)
+plt.grid(True)
+plt.plot(range(len(avg_actor_loss)), avg_actor_loss, label='avg_actor_loss')
+plt.xlabel('Episode')
+plt.ylabel('Actor Loss')
+plt.legend()
+
+plt.subplot(2, 2, 3)
+plt.grid(True)
+plt.plot(range(len(avg_critic_loss)), avg_critic_loss, label='avg_critic_loss')
+plt.xlabel('Episode')
+plt.ylabel('Critic Loss')
+plt.legend()
+
+ep = [i for i in range(10)]
+goal_list = [0, 135, 500, 0, 0, 0, 0, 0, 20, 0]
+plt.subplot(2, 2, 4)
+plt.grid(True)
+plt.stem(ep, goal_list, label='goal')
+plt.xlabel('Episode')
+plt.ylabel('Goal')
+plt.legend()
+
+
+plt.show()

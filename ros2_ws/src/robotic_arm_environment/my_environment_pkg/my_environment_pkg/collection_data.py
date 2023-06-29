@@ -16,7 +16,7 @@ import sys
 import time
 import rclpy
 import numpy as np
-from .main_rl_environment import MyRLEnvironmentNode
+from ..my_environment_pkg.main_rl_environment import MyRLEnvironmentNode
 
 num_episodes = 50
 episode_horizont = 100

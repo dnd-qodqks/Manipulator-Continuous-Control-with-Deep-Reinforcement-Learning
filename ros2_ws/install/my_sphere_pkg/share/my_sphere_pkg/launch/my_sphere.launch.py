@@ -56,14 +56,26 @@ def generate_launch_description():
     sdf_file_name = 'sdf/sphere_goal/model.sdf'
     sdf = os.path.join(pkg_dir, 'models', sdf_file_name)
     
-    spawn_entity = Node(package='gazebo_ros', 
-                        executable='spawn_entity.py', 
-                        arguments=['-entity', 'my_sphere', '-file', sdf, '-x','0.5', '-y','0.5', '-z','1'], 
-                        output='screen')
+    spawn_entity_sphere_0 = Node(package='gazebo_ros', 
+                                executable='spawn_entity.py', 
+                                arguments=['-entity', 'my_sphere_0', '-file', sdf, '-x','0.5', '-y','0.5', '-z','1'], 
+                                output='screen')
+    
+    # spawn_entity_sphere_1 = Node(package='gazebo_ros', 
+    #                             executable='spawn_entity.py', 
+    #                             arguments=['-entity', 'my_sphere_1', '-file', sdf, '-x','0.3', '-y','-0.2', '-z','1.3'], 
+    #                             output='screen')
+    
+    # spawn_entity_sphere_2 = Node(package='gazebo_ros', 
+    #                             executable='spawn_entity.py', 
+    #                             arguments=['-entity', 'my_sphere_2', '-file', sdf, '-x','0.7', '-y','0.15', '-z', '0.7'],
+    #                             output='screen')
 
     # Nodes
     # node_mark --> coordinate_node.py --> reads the position of the sphere in Gazebo and publishes the Marker Topic 
     
-    node_mark = Node(package ='my_sphere_pkg', executable ='reader_mark_node', output ='screen')
+    # node_mark = Node(package ='my_sphere_pkg', executable ='reader_mark_node', output ='screen')
+    node_mark = Node(package ='my_sphere_pkg', executable ='reader_one_mark_node', output ='screen')
     
-    return LaunchDescription([spawn_entity, node_mark])
+    # return LaunchDescription([spawn_entity_sphere_0, spawn_entity_sphere_1, spawn_entity_sphere_2, node_mark])
+    return LaunchDescription([spawn_entity_sphere_0, node_mark])
