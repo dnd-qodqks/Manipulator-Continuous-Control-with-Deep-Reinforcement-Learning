@@ -308,6 +308,13 @@ class MyRLEnvironmentNode(Node):
 		return [angle_j_1, angle_j_2, angle_j_3, angle_j_4, angle_j_5, angle_j_6]
 
 
+	def get_distance(self):
+		robot_end_position    = np.array((self.robot_x, self.robot_y, self.robot_z))
+		target_point_position_0 = np.array((self.pos_sphere_0_x, self.pos_sphere_0_y, self.pos_sphere_0_z))
+		distance_0 = np.linalg.norm(robot_end_position - target_point_position_0)
+
+		return distance_0
+ 
 	def calculate_reward_funct(self, step=0):
 		try:
 			robot_end_position    = np.array((self.robot_x, self.robot_y, self.robot_z))
@@ -330,11 +337,12 @@ class MyRLEnvironmentNode(Node):
 
 			# reward_0 = - distance_0 / 20 - distance_1 / 20 - distance_2 / 20
 
-			# reward_d = - 10 * (distance_0**np.e)
 			# print(reward_d)
    
-			reward_d = - distance_0 / 5
-			# if reward_d < -10: reward_d = -10
+			# reward_d = - distance_0 / 5
+			
+			reward_d = - 0.1 * (distance_0**np.e)
+			if reward_d < -5: reward_d = -5
 
 			if distance_0 < 0.05 and step > 3:
 				self.get_logger().info('Goal Reached')
@@ -354,7 +362,7 @@ class MyRLEnvironmentNode(Node):
 			# else:
 			# 	self.goal_2 = False
 
-			if self.goal_0 is True: reward_0 = 20
+			if self.goal_0 is True: reward_0 = 5
 			if self.goal_0 is True: reward_1 = 5
 			if self.goal_0 is True: reward_2 = 5
    

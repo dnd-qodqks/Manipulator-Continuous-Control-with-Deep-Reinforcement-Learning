@@ -199,8 +199,9 @@ class Agent():
         self.critic.load_state_dict(torch.load(critic_path))
     
     def get_action(self, state):
-        state = np.array(state)
-        state_change = torch.from_numpy(state).float().to(self.device)
+        state_change = torch.tensor(state).float().to(self.device)
+        print(f"{state_change[1].cpu().numpy():.10}", state_change.dtype)
+        # print(state_change, state_change.dtype)
         
         action = self.actor.forward(state_change)
         
@@ -266,6 +267,11 @@ class Agent():
         for target_param, param in zip(self.critic_target.parameters(), self.critic.parameters()):
             target_param.data.copy_(param.data * self.tau_critic + target_param.data * (1.0 - self.tau))
 
-    def save_model(self, save_path):
-        torch.save(self.actor.state_dict(), f"{save_path}/actor.pt")
-        torch.save(self.critic.state_dict(), f"{save_path}/critic.pt")
+    def save_model(self, save_path, file_name=None):
+        if file_name is not None:
+            torch.save(self.actor.state_dict(), f"{save_path}/actor_{file_name}.pt")
+            torch.save(self.critic.state_dict(), f"{save_path}/critic_{file_name}.pt")
+        else:
+            torch.save(self.actor.state_dict(), f"{save_path}/actor.pt")
+            torch.save(self.critic.state_dict(), f"{save_path}/critic.pt")    
+        

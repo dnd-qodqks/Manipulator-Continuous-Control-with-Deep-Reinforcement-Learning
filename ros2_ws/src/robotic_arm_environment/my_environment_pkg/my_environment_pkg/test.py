@@ -30,14 +30,16 @@ plt.xlabel('Episode')
 plt.ylabel('Critic Loss')
 plt.legend()
 
-ep = [i for i in range(10)]
-goal_list = [0, 135, 500, 0, 0, 0, 0, 0, 20, 0]
-plt.subplot(2, 2, 4)
-plt.grid(True)
-plt.stem(ep, goal_list, label='goal')
-plt.xlabel('Episode')
-plt.ylabel('Goal')
-plt.legend()
-
 
 plt.show()
+
+# import torch
+# import numpy as np
+
+# b = torch.tensor([True, 0.00000001, 1.45], dtype=torch.float32).to('cuda')
+# print('output tensor:',b)
+
+# b[0] = -1
+# print('It can change np.array:',b)
+
+# print(float(True))
