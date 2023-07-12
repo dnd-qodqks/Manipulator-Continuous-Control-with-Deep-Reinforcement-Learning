@@ -319,12 +319,8 @@ class MyRLEnvironmentNode(Node):
 		try:
 			robot_end_position    = np.array((self.robot_x, self.robot_y, self.robot_z))
 			target_point_position_0 = np.array((self.pos_sphere_0_x, self.pos_sphere_0_y, self.pos_sphere_0_z))
-			# target_point_position_1 = np.array((self.pos_sphere_1_x, self.pos_sphere_1_y, self.pos_sphere_1_z))
-			# target_point_position_2 = np.array((self.pos_sphere_2_x, self.pos_sphere_2_y, self.pos_sphere_2_z))
 			
 			reward_0 = 0
-			reward_1 = 0
-			reward_2 = 0
    
 		except: 
 			self.get_logger().info('could not calculate the distance yet, trying again...')
@@ -332,15 +328,7 @@ class MyRLEnvironmentNode(Node):
 
 		else:
 			distance_0 = np.linalg.norm(robot_end_position - target_point_position_0)
-			# distance_1 = np.linalg.norm(robot_end_position - target_point_position_1)
-			# distance_2 = np.linalg.norm(robot_end_position - target_point_position_2)
-
-			# reward_0 = - distance_0 / 20 - distance_1 / 20 - distance_2 / 20
-
-			# print(reward_d)
-   
-			# reward_d = - distance_0 / 5
-			
+   		
 			reward_d = - 0.1 * (distance_0**np.e)
 			if reward_d < -5: reward_d = -5
 
@@ -349,36 +337,17 @@ class MyRLEnvironmentNode(Node):
 				self.goal_0 = True
 			else:
 				self.goal_0 = False
-    
-			# if distance_1 < 0.05 and step > 3:
-			# 	self.get_logger().info('Goal Reached')
-			# 	self.goal_1 = True
-			# else:
-			# 	self.goal_1 = False
-
-			# if distance_2 < 0.05 and step > 3:
-			# 	self.get_logger().info('Goal Reached')
-			# 	self.goal_2 = True
-			# else:
-			# 	self.goal_2 = False
 
 			if self.goal_0 is True: reward_0 = 5
-			if self.goal_0 is True: reward_1 = 5
-			if self.goal_0 is True: reward_2 = 5
    
-			# return reward_d + reward_0 + reward_1 + reward_2
 			return reward_d + reward_0
 
 	def get_space(self, step=0):
-
-		# This function creates the state state vector and returns the current value of each variable
-		# i.e end-effector position, each joint value, target (sphere position) 
-
 		try:
 			reward  = self.calculate_reward_funct(step)
 			
 			state = [
-					self.goal_0, # self.goal_1, self.goal_2,
+					self.goal_0,
 					self.joint_1_pos, self.joint_2_pos, self.joint_3_pos, self.joint_4_pos, self.joint_5_pos, self.joint_6_pos,
 					self.robot_x, self.robot_y, self.robot_z
 					]			 	
